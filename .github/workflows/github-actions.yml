@@ -4,6 +4,8 @@ jobs:
   Build-Resume-JSON:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
       - run: sudo apt-get install jq
       - run: ls ${{ github.workspace }}
       - run: cat ${{ github.workspace }}/requirements.txt
