@@ -50,9 +50,9 @@ jobs:
       - name: Validate Resume Schema
         run: resume validate resume.json
 
-  Convert-Resume:
-    needs: Build-Resume-JSON
-    runs-on: ubuntu-20.04
-    steps:
+  # Convert-Resume:
+  #   needs: Build-Resume-JSON
+  #   runs-on: ubuntu-20.04
+  #   steps:
 
-      - name: Download the resume artifact
+  #     - name: Download the resume artifact
