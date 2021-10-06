@@ -1,0 +1,15 @@
+name: Resume Linting
+on: [push]
+jobs:
+  YAML_Linting:
+    name: Checking `resume.yml` using `yamllint`
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Install YAML Lint
+        run: pip install yamllint
+
+      - name: Lint YAML files
+        run: yamllint .
