@@ -36,5 +36,8 @@ jobs:
       
       - name: Install Resume CLI
         run: npm install -g resume-cli
+      
+      - name: Validate Resume Schema
+        run: resume validate resume.json
 
       - run: cat ${{ github.workspace }}/resume.json
