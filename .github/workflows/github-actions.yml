@@ -18,6 +18,12 @@ jobs:
       - name: Display 'resume.json'
         run: cat ${{ github.workspace }}/resume.json
 
+      - name: Create resume artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: resume.json
+          path: ${{ github.workspace }}/resume.json
+
   Install-JSON-cli:
     needs: Build-Resume-JSON
     runs-on: ubuntu-20.04
