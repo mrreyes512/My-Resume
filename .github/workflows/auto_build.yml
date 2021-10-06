@@ -1,18 +1,6 @@
 name: Resume Auto Build
 on: [push]
 jobs:
-  YAML_Linting:
-    name: Verify resume.yml syntax
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v2
-
-      - name: Install YAML Lint
-        run: pip install yamllint
-
-      - name: Lint YAML files
-        run: yamllint .
 
   Build-Resume-JSON:
     runs-on: ubuntu-20.04
@@ -28,7 +16,7 @@ jobs:
       - name: Convert 'resume.yml' to 'resume.json'
         run: cat ${{ github.workspace }}/resume.yml | yq > ${{ github.workspace }}/resume.json
       
-      - name: Create resume artifact
+      - name: Create JSON Resume Artifact
         uses: actions/upload-artifact@v2
         with:
           name: resume.json
@@ -50,9 +38,24 @@ jobs:
       - name: Validate Resume Schema
         run: resume validate resume.json
 
-  # Convert-Resume:
-  #   needs: Build-Resume-JSON
-  #   runs-on: ubuntu-20.04
-  #   steps:
+  Convert-Resume:
+    needs: [Build-Resume-JSON, Resume-Lint]
+    runs-on: ubuntu-20.04
+    steps:
 
-  #     - name: Download the resume artifact
+      - name: Download the resume artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume.json
+      
+      - name: Install Resume CLI
+        run: npm install -g resume-cli
+      
+      - name: Convert Resume to HTML
+        run: resume export resume.html
+
+      - name: Create HTML Resume Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: resume.json
+          path: ${{ github.workspace }}/resume.html
