@@ -3,4 +3,4 @@
 extends: default
 rules:
 
-  line-length: disale
+  line-length: disable
