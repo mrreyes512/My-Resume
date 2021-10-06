@@ -1,0 +1,14 @@
+name: Resume Auto Build
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install yaml2json
+        run: pip install yml2json
+      
+      - name: Convert 'resume.yml' to 'resume.json'
+        run: yaml2json ${{ github.workspace }}/resume.yml | python -m json.tool > ${{ github.workspace }}/resume.json
+      
+      - name: Display 'resume.json'
+        run: cat ${{ github.workspace }}/resume.json
