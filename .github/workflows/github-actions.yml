@@ -2,7 +2,7 @@ name: Resume Auto Build
 on: [push]
 jobs:
   Build-Resume-JSON:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -15,5 +15,12 @@ jobs:
       - name: Convert 'resume.yml' to 'resume.json'
         run: cat ${{ github.workspace }}/resume.yml | yq > ${{ github.workspace }}/resume.json
       
+      - name: Display 'resume.json'
+        run: cat ${{ github.workspace }}/resume.json
+
+  Install-JSON-cli:
+    needs: Build-Resume-JSON
+    runs-on: ubuntu-20.04
+    steps:
       - name: Display 'resume.json'
         run: cat ${{ github.workspace }}/resume.json
