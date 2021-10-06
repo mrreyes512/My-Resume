@@ -55,7 +55,7 @@ jobs:
         run: npm i jsonresume-theme-eddywashere
 
       - name: Convert Resume to HTML
-        run: resume --theme eddywashere export resume.html
+        run: resume --theme eddywashere --resume resume.json export resume.html --format html
 
       - name: Create HTML Resume Artifact
         uses: actions/upload-artifact@v2
