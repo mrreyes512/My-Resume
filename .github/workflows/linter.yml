@@ -1,17 +1,10 @@
 ---
-name: Lint Code Base
 #
 # Documentation:
 # https://help.github.com/en/articles/workflow-syntax-for-github-actions
 #
-
-on:
-  push:
-    branches-ignore: [master, main]
-    # Remove the line above to run when pushing to master
-  pull_request:
-    branches: [master, main]
-
+name: Lint Code Base
+on: [push]
 jobs:
   build:
     name: Lint Code Base
