@@ -15,9 +15,6 @@ jobs:
       - name: Convert 'resume.yml' to 'resume.json'
         run: cat ${{ github.workspace }}/resume.yml | yq > ${{ github.workspace }}/resume.json
       
-      # - name: Display 'resume.json'
-      #   run: cat ${{ github.workspace }}/resume.json
-
       - name: Create resume artifact
         uses: actions/upload-artifact@v2
         with:
@@ -40,4 +37,9 @@ jobs:
       - name: Validate Resume Schema
         run: resume validate resume.json
 
-      - run: cat ${{ github.workspace }}/resume.json
+  Convert-Resume:
+    needs: Build-Resume-JSON
+    runs-on: ubuntu-20.04
+    steps:
+
+      - name: Download the resume artifact

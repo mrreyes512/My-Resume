@@ -1,5 +1,5 @@
 # My Resume Backend
-[![GitHub Actions Demo](https://github.com/mrreyes512/resume/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/mrreyes512/resume/actions/workflows/github-actions-demo.yml)
+[![Resume Auto Build](https://github.com/mrreyes512/resume/actions/workflows/github-actions.yml/badge.svg)](https://github.com/mrreyes512/resume/actions/workflows/github-actions.yml)
 
 This repo is for my automated resume build structured from of [JSON Resume](https://jsonresume.org/).
 
