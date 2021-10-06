@@ -28,5 +28,9 @@ jobs:
     needs: Build-Resume-JSON
     runs-on: ubuntu-20.04
     steps:
-      - name: Display 'resume.json'
+
+      - name: Download a single artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume.json
         run: cat ${{ github.workspace }}/resume.json
