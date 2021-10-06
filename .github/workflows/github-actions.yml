@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install yaml2json
-        run: pip install yml2json
+        run: npm i yaml-to-json
       
       - name: Convert 'resume.yml' to 'resume.json'
         run: yaml2json ${{ github.workspace }}/resume.yml | python -m json.tool > ${{ github.workspace }}/resume.json
