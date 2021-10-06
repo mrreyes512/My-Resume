@@ -1,6 +1,19 @@
 name: Resume Auto Build
 on: [push]
 jobs:
+  YAML_Linting:
+    name: Verify resume.yml syntax
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Install YAML Lint
+        run: pip install yamllint
+
+      - name: Lint YAML files
+        run: yamllint .
+
   Build-Resume-JSON:
     runs-on: ubuntu-20.04
     steps:
