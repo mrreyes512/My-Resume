@@ -33,4 +33,4 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: resume.json
-        run: cat ${{ github.workspace }}/resume.json
+      - run: cat ${{ github.workspace }}/resume.json
