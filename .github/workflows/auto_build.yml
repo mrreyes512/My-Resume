@@ -89,9 +89,9 @@ jobs:
           path: ${{ github.workspace }}/resume.html
 
   Convert-Resume-PDF:
-  # Building HTML and PDF artifacts
+  # Building PDF artifacts
 
-    name: Converting JSON 💾
+    name: Building PDF Artifact 💾
     needs: [Build-Resume-JSON, Verify-JSON]
     runs-on: ubuntu-20.04
     steps:
