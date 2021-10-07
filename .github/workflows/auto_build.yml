@@ -3,10 +3,10 @@ name: Build Resume
 on: [push]
 jobs:
 
-  YAML_Linting:
+  Repo_Linting:
   # Verify json.yml and workflow conform to yaml linting
 
-    name: Checking `resume.yml` using `yamllint`
+    name: Repo Linting
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository code
