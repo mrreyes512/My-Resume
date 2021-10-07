@@ -9,4 +9,6 @@ rules:
     allow-non-breakable-inline-mappings: false
     level: warning
 
+  truthy: disable
+
   comments-indentation: disable

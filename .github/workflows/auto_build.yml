@@ -1,3 +1,4 @@
+---
 name: Resume Auto Build
 on: [push]
 jobs:
@@ -7,15 +8,15 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      
+
       - run: sudo apt-get install jq
 
       - name: Install requirements.txt
         run: pip install -r ${{ github.workspace }}/requirements.txt
-      
+
       - name: Convert 'resume.yml' to 'resume.json'
         run: cat ${{ github.workspace }}/resume.yml | yq > ${{ github.workspace }}/resume.json
-      
+
       - name: Create JSON Resume Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -31,10 +32,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: resume.json
-      
+
       - name: Install Resume CLI
         run: npm install -g resume-cli
-      
+
       - name: Validate Resume Schema
         run: resume validate resume.json
 
@@ -59,10 +60,10 @@ jobs:
   #       uses: actions/download-artifact@v2
   #       with:
   #         name: resume.json
-      
+
   #     - name: Install Resume CLI
   #       run: npm install -g resume-cli
-      
+
   #     - name: Install eddywashere Theme
   #       run: npm i jsonresume-theme-eddywashere
 

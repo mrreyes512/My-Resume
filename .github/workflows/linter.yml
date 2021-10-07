@@ -1,3 +1,4 @@
+---
 name: Resume Linting
 on: [push]
 jobs:
@@ -12,4 +13,4 @@ jobs:
         run: pip install yamllint
 
       - name: Lint YAML files
-        run: yamllint -c .yamlignore.yml resume.yml 
+        run: yamllint -c .yamlignore.yml resume.yml .github/workflows
