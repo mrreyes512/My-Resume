@@ -1,5 +1,5 @@
 ---
-name: Build Resume
+name: Resume Actions
 on: [push]
 jobs:
 
