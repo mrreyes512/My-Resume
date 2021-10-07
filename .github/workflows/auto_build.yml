@@ -132,20 +132,25 @@ jobs:
 
       - name: Check out repository code
         uses: actions/checkout@v2
-        with:
-          ref: gh-page
+        # with:
+        #   ref: gh-page
 
       - name: Download the resume artifact
         uses: actions/download-artifact@v2
         with:
-          name: resume.html
+          name: [resume.html, resume.pdf]
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
       - run: mv resume.html docs/index.html
+      - run: mv resume.pdf docs/resume_${{ steps.date.outputs.date }}.pdf
 
       - name: Publish GH Page
         uses: EndBug/add-and-commit@v7
         with:
-          add: docs/index.html
+          add: docs/
           branch: gh-page
           message: Auto Update index.html
           author_name: Mark Reyes
