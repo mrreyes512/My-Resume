@@ -1,7 +1,6 @@
 name: Resume Auto Build
 on: [push]
 jobs:
-  name: Auto Build my Resume
 
   Build-Resume-JSON:
     runs-on: ubuntu-20.04
