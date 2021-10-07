@@ -1,7 +1,7 @@
 ---
 name: Resume Actions
 
-on: 
+on:
   push:
     branches:
       - main
