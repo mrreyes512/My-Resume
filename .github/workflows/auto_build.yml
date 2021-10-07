@@ -63,7 +63,7 @@ jobs:
   Convert-Resume-HTML:
   # Building HTML and PDF artifacts
 
-    name: Converting to HTML 💾
+    name: Converting to HTML 🌎
     needs: [Build-Resume-JSON, Verify-JSON]
     runs-on: ubuntu-20.04
     steps:
