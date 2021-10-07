@@ -1,5 +1,5 @@
 ---
-name: Resume Auto Build
+name: Build Resume
 on: [push]
 jobs:
 
@@ -8,8 +8,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-
-      - run: sudo apt-get install jq
 
       - name: Install requirements.txt
         run: pip install -r ${{ github.workspace }}/requirements.txt
@@ -40,7 +38,7 @@ jobs:
         run: resume validate resume.json
 
       - name: Install eddywashere Theme
-        run: npm i jsonresume-theme-eddywashere
+        run: npm install jsonresume-theme-even jsonresume-theme-eddywashere
 
       - name: Convert Resume to HTML
         run: resume export resume.html --theme eddywashere --resume resume.json --format html

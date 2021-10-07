@@ -1,3 +1,7 @@
 venv
 node_modules
 package-lock.json
+
+# Locally built resume files
+resume.json
+resume.html
