@@ -116,3 +116,31 @@ jobs:
         with:
           name: resume.pdf
           path: ${{ github.workspace }}/resume.pdf
+
+  Deploy-To-GHPage:
+  # Make a commit to the gh-page branch
+
+    name: Converting to HTML 🌎
+    needs: [Build-Resume-JSON, Verify-JSON]
+    runs-on: ubuntu-20.04
+    steps:
+
+      - name: Check out repository code
+        uses: actions/checkout@v2
+        with: 
+          ref: gh-page
+
+      - name: Download the resume artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume.html
+      
+      - run: mv resume.html docs/
+
+      - name: Publish GH Page
+        uses: EndBug/add-and-commit@v7
+        with:
+          branch: gh-page
+          message: Auto Update index.html
+          committer_name: GitHub Actions
+          committer_email: actions@github.com
