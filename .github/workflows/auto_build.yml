@@ -3,7 +3,25 @@ name: Build Resume
 on: [push]
 jobs:
 
+  YAML_Linting:
+  # Verify json.yml and workflow conform to yaml linting
+
+    name: Checking `resume.yml` using `yamllint`
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Install YAML Lint
+        run: pip install yamllint
+
+      - name: Lint YAML files
+        run: yamllint -c .yamlignore.yml resume.yml .github/workflows
+
   Build-Resume-JSON:
+  # Convert json.yml into JSON format && Load into an artifact
+
+    if: always()
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository code
@@ -21,7 +39,9 @@ jobs:
           name: resume.json
           path: ${{ github.workspace }}/resume.json
 
-  Resume-Lint:
+  Verify-JSON:
+  # Verify converted resume.json formats to JSON-Resume's syantax
+
     needs: Build-Resume-JSON
     runs-on: ubuntu-20.04
     steps:
