@@ -59,7 +59,7 @@ jobs:
 
 
   Convert-Resume:
-    needs: [Build-Resume-JSON, Resume-Lint]
+    needs: [Build-Resume-JSON, Verify-JSON]
     runs-on: ubuntu-20.04
     steps:
 
