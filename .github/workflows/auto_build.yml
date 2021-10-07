@@ -126,7 +126,7 @@ jobs:
   # Make a commit to the gh-page branch
 
     name: Updating Index.html 🏗
-    needs: Convert-Resume-HTML
+    needs: [Convert-Resume-HTML, Convert-Resume-PDF]
     runs-on: ubuntu-20.04
     steps:
 
