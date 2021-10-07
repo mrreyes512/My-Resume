@@ -1,0 +1,685 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+	<title>Mark Reyes - Manager Network Development</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:300,400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	color: #333;
+	margin: 0 0 80px;
+	font-size: 15px;
+}
+a {
+	color: #E32B46;
+}
+a:focus,
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+strong {
+	font-size: smaller;
+	font-weight: 400;
+	color: #333;
+	text-transform: uppercase;
+}
+p {
+	line-height: 1.5;
+	margin: 0 0 .5em 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0;
+	font-weight: 300;
+	color: #555;
+}
+section {
+	margin-top: 15px;
+}
+ul, ol {
+	padding-left: 21px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 16px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #666;
+	font-weight: 300;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #333;
+	font-weight: 400;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px;
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	padding: 50px 0 25px;
+	/*margin-bottom: 25px;*/
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #555;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: 400;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 28px;
+	}
+	#header h2 {
+		font-size: 24px;
+	}
+	#content h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}
+	#header {
+		/*margin-bottom: 10px;*/
+		padding: 30px 0 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+@media print {
+	body {
+		font-size: 12px;
+	}
+	a[href]:after {
+		display: none;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#header h2 {
+		font-size: 18px;
+		margin-top: -8px;
+	}
+	h4 {
+		font-size: 13px;
+	}
+  #header {
+		padding: 0;
+	}
+
+	#content aside {
+		margin: 0 !important;
+	}
+
+	#content h3 {
+		font-size: 16px;
+		margin-top: 0;
+	}
+
+	blockquote {
+		border: 0;
+		border-left: 3px solid #e7e9ec;
+		font-size: 12px;
+	}
+
+	li:before {
+		font: 10px Octicons;
+	}
+
+	.strike-through {
+		border-top-color: transparent;
+	}
+	.strike-through span + span {
+		font-size: 12px;
+	}
+	.col-sm-push-3 {
+    left: 25%;
+	}
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  float: left;
+	}
+	.col-sm-12 {
+	  width: 100%;
+	}
+	.col-sm-11 {
+	  width: 91.66666666666666%;
+	}
+	.col-sm-10 {
+	  width: 83.33333333333334%;
+	}
+	.col-sm-9 {
+	  width: 75%;
+	}
+	.col-sm-8 {
+	  width: 66.66666666666666%;
+	}
+	.col-sm-7 {
+	  width: 58.333333333333336%;
+	}
+	.col-sm-6 {
+	  width: 50%;
+	}
+	.col-sm-5 {
+	  width: 41.66666666666667%;
+	}
+	.col-sm-4 {
+	  width: 33.33333333333333%;
+	 }
+	 .col-sm-3 {
+	   width: 25%;
+	 }
+	 .col-sm-2 {
+	   width: 16.666666666666664%;
+	 }
+	 .col-sm-1 {
+	  width: 8.333333333333332%;
+	 }
+}
+
+	</style>
+
+	</head>
+	<body>
+
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Mark Reyes
+					</h1>
+					<h2>
+						Manager Network Development
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">mrreyes512@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(512) 790-0901</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Proud Naval Veteran. Charismatic leader. Habitual learner. After four years in the Navy as an IT, I started my 13 year venture with a major ISP in Austin, in which I've experienced a tremendous amount of growth. I spent four years in field service with Spectrum, and eight years in various Engineering roles, with the last year leading a team of Network Developers. Now, as a Manager for a Network Development team, it has strengthened my foundation in guiding projects which lead toward corporate goals and building a strong development culture which is envious to work in. Taking the helm of a cross-functional team has allowed me to build trust from individuals and inspire greatness by coaching member's strengths, helping them contribute to the group's potential. This resulted in establishing a clear direction and success in achieving our strategic goals as a business unit. I believe my unique blend of Charismatic/Servant leadership style is a testament to the team's growth and ultimate successes!</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://www.linkedin.com/in/mrreyes512/">mrreyes512</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						GitHub
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://github.com/mrreyes512/">mrreyes512</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Spectrum Enterprise</span>
+					<span class="date">
+						March 2019 — December 2021
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://business.spectrum.com/">https://business.spectrum.com/</a>
+				</div>
+				<div class="position">
+					Manager Network Development
+				</div>
+				<div class="summary">
+					<p>During my time as the Manager of a Network Development Team in Spectrum, I worked
+together with a management team to transition a team of twenty Network Engineers
+into Network Developers. This included guiding many into unclear territory as their
+job functions were transitioned. Discovering a clear career path and building a
+collaborative culture were some of the small difficulties to overcome.
+Once our Service Reliability Engineering team was estabilished, I guided them to
+continue development of scalable Ansible Playbooks for Automated Deployments in our
+Production Environment; Building automated regression tests using GitLab CI/CD and
+Jenkins; and Containerizing legacy applications in Docker.
+</p>
+				</div>
+				<p>
+					<strong>Highlights</strong>
+				</p>
+				<ul class="highlights">
+					<li class="bullet">Established an environment with three vertical slice teams involving over twenty developers and three Area Product Owners</li>
+					<li class="bullet">Guided my development team to automate a manual process which saved Spectrum a projected estimate of one million dollars in Capital Expense</li>
+					<li class="bullet">Deployment automations using Ansible Roles allowing a scalable cookbook</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Spectrum Enterprise</span>
+					<span class="date">
+						March 2016 — March 2019
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://business.spectrum.com/">https://business.spectrum.com/</a>
+				</div>
+				<div class="position">
+					Sr Network Developer
+				</div>
+				<div class="summary">
+					<p>Our primary focus was to improve efficiencies of our work-order pipeline by means
+of automating the provisioning of network services. We participated in regular code
+reviews and followed the principles outlined in gitflow. Our automated build pipeline(CI/CD)
+was run through jobs executed by GitLab Runners and Jenkins Jobs. Daily Stand-ups
+ensured communication and transparency among the Scrum Team. We demonstrated our
+progress to Stakeholders and Product Owners at a per Sprint Iteration. This would
+allow a project to fail-fast and be agile enough to take new direction at the speed
+of business needs.
+As a secondary hat, I developed scalable playbooks with Ansible roles to systematically
+deploy our network orchestrator. This effort cut down countless houman hours during
+our production deployments and regression testing.
+</p>
+				</div>
+				<p>
+					<strong>Highlights</strong>
+				</p>
+				<ul class="highlights">
+					<li class="bullet">Project Lead: Port Activation</li>
+					<li class="bullet">Testing Lead: Andromeda Project</li>
+					<li class="bullet">Development Lead: Systematic Deployments with Ansible</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Spectrum Enterprise</span>
+					<span class="date">
+						June 2014 — March 2016
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://business.spectrum.com/">https://business.spectrum.com/</a>
+				</div>
+				<div class="position">
+					Sr Systems Engineer
+				</div>
+				<div class="summary">
+					<p>In a Systems Role, I developed modules for a Network Device Orchestration
+Suite of tools, which automated common tasks in various software sets when a
+new network element was discovered. Communicated to multiple groups when
+changes were going to affect existing architecture. Developed multiple
+scripts for operational groups based on requirements expressed. Troubleshot
+issues as needed when network automation systems failed, or were reported
+via trouble tickets.
+</p>
+				</div>
+				<p>
+					<strong>Highlights</strong>
+				</p>
+				<ul class="highlights">
+					<li class="bullet">Application Development: Coffee Reports</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Spectrum Enterprise</span>
+					<span class="date">
+						March 2012 — June 2014
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://business.spectrum.com/">https://business.spectrum.com/</a>
+				</div>
+				<div class="position">
+					Network Engineer
+				</div>
+				<div class="summary">
+					<p>With Spectrum Enterprise's Network Engineering team I was free to improve
+processes for departmental procedures within the Commercial Network. I
+developed multiple scripts for identified inefficiencies within a team’s
+current workflow. I built reports based on various criteria and equipment
+vendor challenges. I was able to push multi-line configuration changes to
+1000’s of various equipment based on security updates or network needs. I
+was required to present data collected from network-wide collections so that
+upper management can interpret and understand network trends and
+peculiarities.
+As well, I provisioned circuits as requested by Business Class customers
+across a cross-platform network comprised of; Cisco, Juniper, Alcatel, Adva,
+and RAD equipment utilizing command line interface.
+</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Spectrum Enterprise</span>
+					<span class="date">
+						February 2011 — March 2012
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://business.spectrum.com/">https://business.spectrum.com/</a>
+				</div>
+				<div class="position">
+					NOC Analysist
+				</div>
+				<div class="summary">
+					<p>While in Spectrum's NOC we maintained the network integrity of the
+hybrid-fiber coax network used for CPE digital cable box reception and
+high-speed Internet. Other monitored services included: Video-on-Demand
+service group utilization, CMTS network elements, Regional Transport
+Network, Customer Edge Network, and Spectrum network We collaborated TAC and
+division dispatch teams to resolve issues found. Investigated network
+problems using various tools including; Unified, NYROC, SPECTRUM, Tivoli
+Integrated Portal, and other tool suites.
+</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Spectrum Enterprise</span>
+					<span class="date">
+						March 2007 — February 2011
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://business.spectrum.com/">https://business.spectrum.com/</a>
+				</div>
+				<div class="position">
+					Broadband Tech
+				</div>
+				<div class="summary">
+					<p>When in the field, I troubleshot and repaired field problems from
+subscribers’ homes to bridge amplifiers. Responded to subscriber technical
+service calls. Ensured a signal quality within Federal Communications
+Commission standards and strength using various meters and tools. Replaced
+sub-efficient drop cable, house cable, telephone, and Ethernet cable.
+Conducted signal egress / ingress testing and repairs using signal seekers
+and test meters to locate cracks in feeder system lines. Repaired cable
+system leaks as regulated annually by the FCC.
+</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>US Navy</span>
+					<span class="date">
+						January 2003 — January 2007
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.navy.com/careers/information-systems-technician/">https://www.navy.com/careers/information-systems-technician/</a>
+				</div>
+				<div class="position">
+					Information Systems Technician
+				</div>
+				<div class="summary">
+					<p>While in the Navy I Deployed local area networks, monitored traffic flow on
+servers and preformed daily backups on servers. I installed and operated
+various computer software on client machines, re-imaged when needed. As
+well, we complied with US government requirements for secure communications
+via HF, UHF, and VHF frequencies. Performed operational tests and required
+adjustments on circuits. We maintained and replaced various antennas. And we
+proactively identified interference and jamming frequencies to superiors.
+</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Software Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>Ansible Master</li>
+					<li>Application Containerization</li>
+					<li>CI/CD</li>
+					<li>Docker Orchestration</li>
+					<li>Gitflow</li>
+					<li>Jenkins - GitLab - Travis CI</li>
+					<li>Message Brokers</li>
+					<li>RESTFUL HTTP APIs</li>
+					<li>Test Driven Development</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Network Engineering</h4>
+				</div>
+				<ul class="keywords">
+					<li>IP Filtering / ACLs</li>
+					<li>Network Protocols</li>
+					<li>Routing Protocols</li>
+					<li>Subnet Addressing</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Telecom</h4>
+				</div>
+				<ul class="keywords">
+					<li>Cable Attenuation</li>
+					<li>DOCSIS</li>
+					<li>Hybrid Fiber Coax</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Navy</span>
+					<span class="date">
+						January 2003 — January 2007
+					</span>
+				</h4>
+				<div class="area">
+					Information Technology
+				</div>
+				<div class="studyType">
+					General
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Austin Community College</span>
+					<span class="date">
+						January 2010 — May 2011
+					</span>
+				</h4>
+				<div class="area">
+					Cisco Network Academy
+				</div>
+				<div class="studyType">
+					Network Technology
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+	</div>
+
+	</body>
+</html>
