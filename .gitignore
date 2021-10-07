@@ -5,3 +5,4 @@ package-lock.json
 # Locally built resume files
 resume.json
 resume.html
+resume.pdf

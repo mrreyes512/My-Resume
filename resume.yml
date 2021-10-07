@@ -3,7 +3,7 @@
 # ================================================
 basics:
   name: Mark Reyes
-  label: Manager Network Developer
+  label: Manager Network Development
   picture: https://raw.githubusercontent.com/mrreyes512/resume/master/my_profile.png
   email: mrreyes512@gmail.com
   phone: (512) 790-0901
@@ -28,13 +28,13 @@ basics:
     city: Round Rock
     countryCode: US
     region: Texas
-  # profiles:
-  #   - network: LinkedIn
-  #     username: mrreyes512
-  #     url: https://www.linkedin.com/in/mrreyes512/
-  #   - network: GitHub
-  #     username: mrreyes512
-  #     url: https://github.com/mrreyes512/
+  profiles:
+    - network: LinkedIn
+      username: mrreyes512
+      url: https://www.linkedin.com/in/mrreyes512/
+    - network: GitHub
+      username: mrreyes512
+      url: https://github.com/mrreyes512/
   #   - network: JSON Resume
   #     username: mark_reyes
   #     url: https://registry.jsonresume.org/mark_reyes
@@ -42,7 +42,7 @@ basics:
 # Work Experience
 # ================================================
 work:
-  - position: Manager Network Developer
+  - position: Manager Network Development
     company: Spectrum Enterprise
     website: https://business.spectrum.com/
     startDate: 2019-04-01
