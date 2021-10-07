@@ -37,7 +37,21 @@ jobs:
       - name: Validate Resume Schema
         run: resume validate resume.json
 
-      - name: Install eddywashere Theme
+
+  Convert-Resume:
+    needs: [Build-Resume-JSON, Resume-Lint]
+    runs-on: ubuntu-20.04
+    steps:
+
+      - name: Download the resume artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume.json
+
+      - name: Install Resume CLI
+        run: npm install -g resume-cli
+
+      - name: Install Resume Themes
         run: npm install jsonresume-theme-even jsonresume-theme-eddywashere
 
       - name: Convert Resume to HTML
@@ -46,30 +60,5 @@ jobs:
       - name: Create HTML Resume Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: resume.json
+          name: resume.html
           path: ${{ github.workspace }}/resume.html
-
-  # Convert-Resume:
-  #   needs: [Build-Resume-JSON, Resume-Lint]
-  #   runs-on: ubuntu-20.04
-  #   steps:
-
-  #     - name: Download the resume artifact
-  #       uses: actions/download-artifact@v2
-  #       with:
-  #         name: resume.json
-
-  #     - name: Install Resume CLI
-  #       run: npm install -g resume-cli
-
-  #     - name: Install eddywashere Theme
-  #       run: npm i jsonresume-theme-eddywashere
-
-  #     - name: Convert Resume to HTML
-  #       run: resume --theme eddywashere --resume resume.json export resume.html --format html
-
-  #     - name: Create HTML Resume Artifact
-  #       uses: actions/upload-artifact@v2
-  #       with:
-  #         name: resume.json
-  #         path: ${{ github.workspace }}/resume.html
