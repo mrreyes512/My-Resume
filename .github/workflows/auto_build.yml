@@ -57,8 +57,18 @@ jobs:
       - name: Convert Resume to HTML
         run: resume export resume.html --theme eddywashere --resume resume.json --format html
 
+      - name: Convert Resume to PDF
+        # run: resume export resume.html --theme eddywashere --resume resume.json --format html
+        run: resume export resume.pdf --resume resume.json --format pdf
+
       - name: Create HTML Resume Artifact
         uses: actions/upload-artifact@v2
         with:
           name: resume.html
           path: ${{ github.workspace }}/resume.html
+
+      - name: Create PDF Resume Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: resume.pdf
+          path: ${{ github.workspace }}/resume.pdf
