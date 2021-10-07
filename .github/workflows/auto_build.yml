@@ -142,5 +142,6 @@ jobs:
         with:
           branch: gh-page
           message: Auto Update index.html
+          author_name: Mark Reyes
           committer_name: GitHub Actions
           committer_email: actions@github.com
