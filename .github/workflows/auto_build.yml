@@ -6,7 +6,7 @@ jobs:
   Repo_Linting:
   # Verify json.yml and workflow conform to yaml linting
 
-    name: Repo Linting
+    name: Repo Linting 🧐
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository code
@@ -21,6 +21,7 @@ jobs:
   Build-Resume-JSON:
   # Convert json.yml into JSON format && Load into an artifact
 
+    name: Building resume.json 🚧
     if: always()
     runs-on: ubuntu-20.04
     steps:
@@ -42,6 +43,7 @@ jobs:
   Verify-JSON:
   # Verify converted resume.json formats to JSON-Resume's syantax
 
+    name: JSON Syantax Inspect 🔬
     needs: Build-Resume-JSON
     runs-on: ubuntu-20.04
     steps:
@@ -59,6 +61,9 @@ jobs:
 
 
   Convert-Resume:
+  # Building HTML and PDF artifacts
+
+    name: Converting JSON 💾
     needs: [Build-Resume-JSON, Verify-JSON]
     runs-on: ubuntu-20.04
     steps:
