@@ -1,5 +1,7 @@
 argcomplete==1.12.3
+pathspec==0.9.0
 PyYAML==5.4.1
 toml==0.10.2
 xmltodict==0.12.0
+yamllint==1.26.3
 yq==2.12.2

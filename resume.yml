@@ -1,7 +1,7 @@
 ---
 
 # Basic Resume Info
-#================================================
+# ================================================
 basics:
   name: Mark Reyes
   label: Manager Network Developer
@@ -13,8 +13,10 @@ basics:
     four years in the Navy as an IT, I started my 13 year venture with a major ISP
     in Austin, in which I've experienced a tremendous amount of growth. I spent
     four years in field service with Spectrum, and eight years in various Engineering
-    roles, with the last year leading a team of Network Developers. Now, as a Manager for a Network Development team, it has
-    strengthened my foundation in guiding projects which lead toward corporate goals and building a strong development culture which is envious to work in. 
+    roles, with the last year leading a team of Network Developers. Now, as a Manager
+    for a Network Development team, it has strengthened my foundation in guiding projects
+    which lead toward corporate goals and building a strong development culture which is
+    envious to work in.
     Taking the helm of a cross-functional team has allowed me to build trust from
     individuals and inspire greatness by coaching member's strengths, helping them
     contribute to the group's potential. This resulted in establishing a clear
@@ -28,174 +30,192 @@ basics:
     countryCode: US
     region: Texas
   # profiles:
-  # - network: LinkedIn
-  #   username: mrreyes512
-  #   url: https://www.linkedin.com/in/mrreyes512/
-  # - network: GitHub
-  #   username: mrreyes512
-  #   url: https://github.com/mrreyes512/
-  # - network: JSON Resume
-  #   username: mark_reyes
-  #   url: https://registry.jsonresume.org/mark_reyes
+  #   - network: LinkedIn
+  #     username: mrreyes512
+  #     url: https://www.linkedin.com/in/mrreyes512/
+  #   - network: GitHub
+  #     username: mrreyes512
+  #     url: https://github.com/mrreyes512/
+  #   - network: JSON Resume
+  #     username: mark_reyes
+  #     url: https://registry.jsonresume.org/mark_reyes
 
 # Work Experience
-#================================================
+# ================================================
 work:
-- position: Manager Network Developer
-  company: Spectrum Enterprise
-  website: https://business.spectrum.com/
-  startDate: 2019-04-01
-  endDate: 2021-12-31
-  summary: |
-    During my time as the Manager of a Network Development Team in Spectrum, I worked together with a management team to transition a team of twenty Network Engineers into Network Developers. This included guiding many into unclear territory as their job functions were transitioned. Discovering a clear career path and building a collaborative culture were some of the small difficulties to overcome.
-    Once our Service Reliability Engineering team was estabilished, I guided them to continue development of scalable Ansible Playbooks for Automated Deployments in our Production Environment; Building automated regression tests using GitLab CI/CD and Jenkins; and Containerizing legacy applications in Docker.
-  highlights:
-  - 'Established an environment with three vertical slice teams involving over twenty developers and three Area Product Owners'
-  - 'Guided my development team to automate a manual process which saved Spectrum a projected estimate of one million dollars in Capital Expense'
-  - 'Deployment automations using Ansible Roles allowing a scalable cookbook'
+  - position: Manager Network Developer
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2019-04-01
+    endDate: 2021-12-31
+    summary: |
+      During my time as the Manager of a Network Development Team in Spectrum, I worked
+      together with a management team to transition a team of twenty Network Engineers
+      into Network Developers. This included guiding many into unclear territory as their
+      job functions were transitioned. Discovering a clear career path and building a
+      collaborative culture were some of the small difficulties to overcome.
+      Once our Service Reliability Engineering team was estabilished, I guided them to
+      continue development of scalable Ansible Playbooks for Automated Deployments in our
+      Production Environment; Building automated regression tests using GitLab CI/CD and
+      Jenkins; and Containerizing legacy applications in Docker.
+    highlights:
+      - 'Established an environment with three vertical slice teams involving over twenty
+            developers and three Area Product Owners'
+      - 'Guided my development team to automate a manual process which saved Spectrum a
+            projected estimate of one million dollars in Capital Expense'
+      - 'Deployment automations using Ansible Roles allowing a scalable cookbook'
 
-- position: Sr Network Developer
-  company: Spectrum Enterprise
-  website: https://business.spectrum.com/
-  startDate: 2016-04-01
-  endDate: 2019-04-01
-  summary: |
-    Our primary focus was to improve efficiencies of our work-order pipeline by means of automating the provisioning of network services. We participated in regular code reviews and followed the principles outlined in gitflow. Our automated build pipeline(CI/CD) was run through jobs executed by GitLab Runners and Jenkins Jobs. Daily Stand-ups ensured communication and transparency among the Scrum Team. We demonstrated our progress to Stakeholders and Product Owners at a per Sprint Iteration. This would allow a project to fail-fast and be agile enough to take new direction at the speed of business needs.
-    As a secondary hat, I developed scalable playbooks with Ansible roles to systematically deploy our network orchestrator. This effort cut down countless houman hours during our production deployments and regression testing.
-  highlights:
-  - 'Project Lead: Port Activation'
-  - 'Testing Lead: Andromeda Project'
-  - 'Development Lead: Systematic Deployments with Ansible'
+  - position: Sr Network Developer
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2016-04-01
+    endDate: 2019-04-01
+    summary: |
+      Our primary focus was to improve efficiencies of our work-order pipeline by means
+      of automating the provisioning of network services. We participated in regular code
+      reviews and followed the principles outlined in gitflow. Our automated build pipeline(CI/CD)
+      was run through jobs executed by GitLab Runners and Jenkins Jobs. Daily Stand-ups
+      ensured communication and transparency among the Scrum Team. We demonstrated our
+      progress to Stakeholders and Product Owners at a per Sprint Iteration. This would
+      allow a project to fail-fast and be agile enough to take new direction at the speed
+      of business needs.
+      As a secondary hat, I developed scalable playbooks with Ansible roles to systematically
+      deploy our network orchestrator. This effort cut down countless houman hours during
+      our production deployments and regression testing.
+    highlights:
+      - 'Project Lead: Port Activation'
+      - 'Testing Lead: Andromeda Project'
+      - 'Development Lead: Systematic Deployments with Ansible'
 
-- position: Sr Systems Engineer
-  company: Spectrum Enterprise
-  website: https://business.spectrum.com/
-  startDate: 2014-07-01
-  endDate: 2016-04-01
-  summary: |
-    In a Systems Role, I developed modules for a Network Device Orchestration
-    Suite of tools, which automated common tasks in various software sets when a
-    new network element was discovered. Communicated to multiple groups when
-    changes were going to affect existing architecture. Developed multiple
-    scripts for operational groups based on requirements expressed. Troubleshot
-    issues as needed when network automation systems failed, or were reported
-    via trouble tickets.
-  highlights:
-  - 'Application Development: Coffee Reports'
+  - position: Sr Systems Engineer
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2014-07-01
+    endDate: 2016-04-01
+    summary: |
+      In a Systems Role, I developed modules for a Network Device Orchestration
+      Suite of tools, which automated common tasks in various software sets when a
+      new network element was discovered. Communicated to multiple groups when
+      changes were going to affect existing architecture. Developed multiple
+      scripts for operational groups based on requirements expressed. Troubleshot
+      issues as needed when network automation systems failed, or were reported
+      via trouble tickets.
+    highlights:
+      - 'Application Development: Coffee Reports'
 
-- position: Network Engineer
-  company: Spectrum Enterprise
-  website: https://business.spectrum.com/
-  startDate: 2012-04-01
-  endDate: 2014-07-01
-  summary: |
-    With Spectrum Enterprise's Network Engineering team I was free to improve
-    processes for departmental procedures within the Commercial Network. I
-    developed multiple scripts for identified inefficiencies within a team’s
-    current workflow. I built reports based on various criteria and equipment
-    vendor challenges. I was able to push multi-line configuration changes to
-    1000’s of various equipment based on security updates or network needs. I
-    was required to present data collected from network-wide collections so that
-    upper management can interpret and understand network trends and
-    peculiarities.
-    As well, I provisioned circuits as requested by Business Class customers
-    across a cross-platform network comprised of; Cisco, Juniper, Alcatel, Adva,
-    and RAD equipment utilizing command line interface.
-  highlights: []
+  - position: Network Engineer
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2012-04-01
+    endDate: 2014-07-01
+    summary: |
+      With Spectrum Enterprise's Network Engineering team I was free to improve
+      processes for departmental procedures within the Commercial Network. I
+      developed multiple scripts for identified inefficiencies within a team’s
+      current workflow. I built reports based on various criteria and equipment
+      vendor challenges. I was able to push multi-line configuration changes to
+      1000’s of various equipment based on security updates or network needs. I
+      was required to present data collected from network-wide collections so that
+      upper management can interpret and understand network trends and
+      peculiarities.
+      As well, I provisioned circuits as requested by Business Class customers
+      across a cross-platform network comprised of; Cisco, Juniper, Alcatel, Adva,
+      and RAD equipment utilizing command line interface.
+    highlights: []
 
-- position: NOC Analysist
-  company: Spectrum Enterprise
-  website: https://business.spectrum.com/
-  startDate: 2011-03-01
-  endDate: 2012-04-01
-  summary: |
-    While in Spectrum's NOC we maintained the network integrity of the
-    hybrid-fiber coax network used for CPE digital cable box reception and
-    high-speed Internet. Other monitored services included: Video-on-Demand
-    service group utilization, CMTS network elements, Regional Transport
-    Network, Customer Edge Network, and Spectrum network We collaborated TAC and
-    division dispatch teams to resolve issues found. Investigated network
-    problems using various tools including; Unified, NYROC, SPECTRUM, Tivoli
-    Integrated Portal, and other tool suites.
-  highlights: []
+  - position: NOC Analysist
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2011-03-01
+    endDate: 2012-04-01
+    summary: |
+      While in Spectrum's NOC we maintained the network integrity of the
+      hybrid-fiber coax network used for CPE digital cable box reception and
+      high-speed Internet. Other monitored services included: Video-on-Demand
+      service group utilization, CMTS network elements, Regional Transport
+      Network, Customer Edge Network, and Spectrum network We collaborated TAC and
+      division dispatch teams to resolve issues found. Investigated network
+      problems using various tools including; Unified, NYROC, SPECTRUM, Tivoli
+      Integrated Portal, and other tool suites.
+    highlights: []
 
-- position: Broadband Tech
-  company: Spectrum Enterprise
-  website: https://business.spectrum.com/
-  startDate: 2007-04-01
-  endDate: 2011-03-01
-  summary: |
-    When in the field, I troubleshot and repaired field problems from
-    subscribers’ homes to bridge amplifiers. Responded to subscriber technical
-    service calls. Ensured a signal quality within Federal Communications
-    Commission standards and strength using various meters and tools. Replaced
-    sub-efficient drop cable, house cable, telephone, and Ethernet cable.
-    Conducted signal egress / ingress testing and repairs using signal seekers
-    and test meters to locate cracks in feeder system lines. Repaired cable
-    system leaks as regulated annually by the FCC.
-  highlights: []
+  - position: Broadband Tech
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2007-04-01
+    endDate: 2011-03-01
+    summary: |
+      When in the field, I troubleshot and repaired field problems from
+      subscribers’ homes to bridge amplifiers. Responded to subscriber technical
+      service calls. Ensured a signal quality within Federal Communications
+      Commission standards and strength using various meters and tools. Replaced
+      sub-efficient drop cable, house cable, telephone, and Ethernet cable.
+      Conducted signal egress / ingress testing and repairs using signal seekers
+      and test meters to locate cracks in feeder system lines. Repaired cable
+      system leaks as regulated annually by the FCC.
+    highlights: []
 
-- position: Information Systems Technician
-  company: US Navy
-  website: https://www.navy.com/careers/information-systems-technician/
-  startDate: 2003-02-01
-  endDate: 2007-02-01
-  summary: |
-    While in the Navy I Deployed local area networks, monitored traffic flow on
-    servers and preformed daily backups on servers. I installed and operated
-    various computer software on client machines, re-imaged when needed. As
-    well, we complied with US government requirements for secure communications
-    via HF, UHF, and VHF frequencies. Performed operational tests and required
-    adjustments on circuits. We maintained and replaced various antennas. And we
-    proactively identified interference and jamming frequencies to superiors.
+  - position: Information Systems Technician
+    company: US Navy
+    website: https://www.navy.com/careers/information-systems-technician/
+    startDate: 2003-02-01
+    endDate: 2007-02-01
+    summary: |
+      While in the Navy I Deployed local area networks, monitored traffic flow on
+      servers and preformed daily backups on servers. I installed and operated
+      various computer software on client machines, re-imaged when needed. As
+      well, we complied with US government requirements for secure communications
+      via HF, UHF, and VHF frequencies. Performed operational tests and required
+      adjustments on circuits. We maintained and replaced various antennas. And we
+      proactively identified interference and jamming frequencies to superiors.
 
 # Relevant Skills
-#================================================
+# ================================================
 # Skill level should be:
 # 1)Fundamental Awareness 2) Novice 3) Intermediate 4)Advanced 5)Expert
 skills:
-- name: Software Development
-  level: Advanced
-  keywords:
-  - Ansible Master
-  - Application Containerization
-  - CI/CD
-  - Docker Orchestration
-  - Gitflow
-  - Jenkins - GitLab - Travis CI
-  - Message Brokers
-  - RESTFUL HTTP APIs
-  - Test Driven Development
-- name: Network Engineering
-  level: Advanced
-  keywords:
-  - IP Filtering / ACLs
-  - Network Protocols
-  - Routing Protocols
-  - Subnet Addressing
-- name: Telecom
-  level: Intermediate
-  keywords:
-  - Cable Attenuation
-  - DOCSIS
-  - Hybrid Fiber Coax
+  - name: Software Development
+    level: Advanced
+    keywords:
+      - Ansible Master
+      - Application Containerization
+      - CI/CD
+      - Docker Orchestration
+      - Gitflow
+      - Jenkins - GitLab - Travis CI
+      - Message Brokers
+      - RESTFUL HTTP APIs
+      - Test Driven Development
+  - name: Network Engineering
+    level: Advanced
+    keywords:
+      - IP Filtering / ACLs
+      - Network Protocols
+      - Routing Protocols
+      - Subnet Addressing
+  - name: Telecom
+    level: Intermediate
+    keywords:
+      - Cable Attenuation
+      - DOCSIS
+      - Hybrid Fiber Coax
 
 # Education
-#================================================
+# ================================================
 education:
-- institution: Navy
-  area: Information Technology
-  studyType: General
-  startDate: 2003-02-01
-  endDate: 2007-02-01
-- institution: Austin Community College
-  area: Cisco Network Academy
-  studyType: Network Technology
-  startDate: 2010-02-01
-  endDate: 2011-06-01
+  - institution: Navy
+    area: Information Technology
+    studyType: General
+    startDate: 2003-02-01
+    endDate: 2007-02-01
+  - institution: Austin Community College
+    area: Cisco Network Academy
+    studyType: Network Technology
+    startDate: 2010-02-01
+    endDate: 2011-06-01
 
 # Extras
-#================================================
+# ================================================
 # awards:
 # - title: Digital Compression Pioneer Award
 #   date: 2014-11-01
