@@ -135,10 +135,15 @@ jobs:
         # with:
         #   ref: gh-page
 
-      - name: Download the resume artifact
+      - name: Download the resume HTML artifact
         uses: actions/download-artifact@v2
         with:
-          name: [resume.html, resume.pdf]
+          name: resume.html
+
+      - name: Download the resume PDF artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume.pdf
 
       - name: Get current date
         id: date
