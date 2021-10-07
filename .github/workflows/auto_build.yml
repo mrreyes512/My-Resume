@@ -1,6 +1,11 @@
 ---
 name: Resume Actions
-on: [push]
+
+on: 
+  push:
+    branches:
+      - main
+
 jobs:
 
   Repo_Linting:
@@ -135,11 +140,12 @@ jobs:
         with:
           name: resume.html
 
-      - run: mv resume.html docs/
+      - run: mv resume.html docs/index.html
 
       - name: Publish GH Page
         uses: EndBug/add-and-commit@v7
         with:
+          add: docs/index.html
           branch: gh-page
           message: Auto Update index.html
           author_name: Mark Reyes
