@@ -60,10 +60,10 @@ jobs:
         run: resume validate resume.json
 
 
-  Convert-Resume:
+  Convert-Resume-HTML:
   # Building HTML and PDF artifacts
 
-    name: Converting JSON 💾
+    name: Converting to HTML 💾
     needs: [Build-Resume-JSON, Verify-JSON]
     runs-on: ubuntu-20.04
     steps:
@@ -82,15 +82,34 @@ jobs:
       - name: Convert Resume to HTML
         run: resume export resume.html --theme eddywashere --resume resume.json --format html
 
-      - name: Convert Resume to PDF
-        # run: resume export resume.html --theme eddywashere --resume resume.json --format html
-        run: resume export resume.pdf --resume resume.json --format pdf
-
       - name: Create HTML Resume Artifact
         uses: actions/upload-artifact@v2
         with:
           name: resume.html
           path: ${{ github.workspace }}/resume.html
+
+  Convert-Resume-PDF:
+  # Building HTML and PDF artifacts
+
+    name: Converting JSON 💾
+    needs: [Build-Resume-JSON, Verify-JSON]
+    runs-on: ubuntu-20.04
+    steps:
+
+      - name: Download the resume artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume.json
+
+      - name: Install Resume CLI
+        run: npm install -g resume-cli
+
+      - name: Install Resume Themes
+        run: npm install jsonresume-theme-even jsonresume-theme-eddywashere
+
+      - name: Convert Resume to PDF
+        # run: resume export resume.html --theme eddywashere --resume resume.json --format html
+        run: resume export resume.pdf --resume resume.json --format pdf
 
       - name: Create PDF Resume Artifact
         uses: actions/upload-artifact@v2
