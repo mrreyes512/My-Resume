@@ -21,7 +21,7 @@ This the main file that contains my write up of:
 
 This file is auto-built from the `resume.yml` file
 
-**`.github-actions.yml`**
+**`.github/workflows/auto_build.yml`**
 
 These are the automated build actions
 
@@ -29,6 +29,8 @@ These are the automated build actions
 
 This is where Github will use it's CI/CD ('Github workflows') and automate my resume's website. The build steps overview are outlined below:
 
-1) Obtain a know good Linux environment
-2) Install `resume-cli` outlined in the [Getting Started](https://jsonresume.org/getting-started/) section
-3) Convert `resume.yml` to `resume.json` using 
+![automated build](www/resume.png)
+
+1) Obtain a know good Linux environment     
+2) Install `resume-cli` outlined in the [Getting Started](https://jsonresume.org/getting-started/) section      
+3) Convert `resume.yml` to `resume.json` using      
