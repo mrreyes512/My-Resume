@@ -8,6 +8,33 @@ on:
 
 jobs:
 
+  Check-Files-Diff:
+  # Check what files were added
+
+    name: Chceking Commits 🔎
+    runs-on: ubuntu-20.04
+    steps:
+        
+      - name: Check Modified Files
+        id: check_files
+        run: |
+          echo "=============== list modified files ==============="
+          git diff --name-only HEAD^ HEAD
+
+          echo "========== check paths of modified files =========="
+          git diff --name-only HEAD^ HEAD > files.txt
+          while IFS= read -r file
+          do
+            echo $file
+            if [[ $file != 'resume.yml' ]]; then
+              echo "Modified files are not important to updating the docs/resume.index"
+              echo "::set-output name=run_job::false"
+              break
+            else
+              echo "::set-output name=run_job::true"
+            fi
+          done < files.txt
+
   Repo_Linting:
   # Verify json.yml and workflow conform to yaml linting
 
@@ -122,25 +149,6 @@ jobs:
           name: resume.pdf
           path: ${{ github.workspace }}/resume.pdf
 
-      - name: Check Modified Files
-        id: check_files
-        run: |
-          echo "=============== list modified files ==============="
-          git diff --name-only HEAD^ HEAD
-          
-          echo "========== check paths of modified files =========="
-          git diff --name-only HEAD^ HEAD > files.txt
-          while IFS= read -r file
-          do
-            echo $file
-            if [[ $file != 'resume.yml' ]]; then
-              echo "Modified files are not important to updating the docs/resume.index"
-              echo "::set-output name=run_job::false"
-              break
-            else
-              echo "::set-output name=run_job::true"
-            fi
-          done < files.txt
 
   # Deploy-To-GHPage:
   # # Make a commit to the gh-page branch
