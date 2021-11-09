@@ -14,7 +14,12 @@ jobs:
     name: Chceking Commits 🔎
     runs-on: ubuntu-20.04
     steps:
-        
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
       - name: Check Modified Files
         id: check_files
         run: |
@@ -76,7 +81,7 @@ jobs:
   # Verify converted resume.json formats to JSON-Resume's syantax
 
     name: JSON Syantax Inspect 🔬
-    needs: Build-Resume-JSON
+    needs: [Build-Resume-JSON, Check-Files-Diff]
     runs-on: ubuntu-20.04
     steps:
 
