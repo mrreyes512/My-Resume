@@ -44,6 +44,8 @@ jobs:
   # Verify json.yml and workflow conform to yaml linting
 
     name: Repo Linting 🧐
+    needs: Check-Files-Diff
+    if: needs.Check-Files-Diff.outputs.run_job == 'true'
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository code
@@ -59,7 +61,7 @@ jobs:
   # Convert json.yml into JSON format && Load into an artifact
 
     name: Building resume.json 🚧
-    if: always()
+    # if: always()
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository code
@@ -159,9 +161,7 @@ jobs:
   # Make a commit to the gh-page branch
 
     name: Updating Index.html 🏗
-    # needs: [Convert-Resume-HTML, Convert-Resume-PDF]
-    needs: Check-Files-Diff
-    if: needs.Check-Files-Diff.outputs.run_job == 'true'
+    needs: [Convert-Resume-HTML, Convert-Resume-PDF]
     runs-on: ubuntu-20.04
     steps:
 
