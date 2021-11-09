@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  Check-Files-Diff:
+  Check_Files_Diff:
   # Check what files were added
 
     name: Chceking Commits 🔎
@@ -59,8 +59,8 @@ jobs:
   # Convert json.yml into JSON format && Load into an artifact
 
     name: Building resume.json 🚧
-    needs: Check-Files-Diff
-    if: needs.Check-Files-Diff.outputs.run_job == 'true'
+    needs: Check_Files_Diff
+    if: needs.Check_Files_Diff.outputs.run_job == 'true'
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository code
@@ -82,7 +82,7 @@ jobs:
   # Verify converted resume.json formats to JSON-Resume's syantax
 
     name: JSON Syantax Inspect 🔬
-    needs: [Build-Resume-JSON, Check-Files-Diff]
+    needs: [Build-Resume-JSON, Check_Files_Diff]
     runs-on: ubuntu-20.04
     steps:
 
