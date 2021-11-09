@@ -155,42 +155,44 @@ jobs:
           path: ${{ github.workspace }}/resume.pdf
 
 
-  # Deploy-To-GHPage:
-  # # Make a commit to the gh-page branch
+  Deploy-To-GHPage:
+  # Make a commit to the gh-page branch
 
-  #   name: Updating Index.html 🏗
-  #   needs: [Convert-Resume-HTML, Convert-Resume-PDF]
-  #   runs-on: ubuntu-20.04
-  #   steps:
+    name: Updating Index.html 🏗
+    needs: [Convert-Resume-HTML, Convert-Resume-PDF]
+    needs: Check-Files-Diff
+    if: needs.Check-Files-Diff.outputs.run_job == 'true'
+    runs-on: ubuntu-20.04
+    steps:
 
-  #     - name: Check out repository code
-  #       uses: actions/checkout@v2
-  #       # with:
-  #       #   ref: gh-page
+      - name: Check out repository code
+        uses: actions/checkout@v2
+        # with:
+        #   ref: gh-page
 
-  #     - name: Download the resume HTML artifact
-  #       uses: actions/download-artifact@v2
-  #       with:
-  #         name: resume.html
+      - name: Download the resume HTML artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume.html
 
-  #     - name: Download the resume PDF artifact
-  #       uses: actions/download-artifact@v2
-  #       with:
-  #         name: resume.pdf
+      - name: Download the resume PDF artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume.pdf
 
-  #     - name: Get current date
-  #       id: date
-  #       run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
-  #     - run: mkdir docs && mv resume.html docs/index.html
-  #     - run: mv resume.pdf docs/resume_${{ steps.date.outputs.date }}.pdf
+      - run: mkdir docs && mv resume.html docs/index.html
+      - run: mv resume.pdf docs/resume_${{ steps.date.outputs.date }}.pdf
 
-  #     - name: Publish GH Page
-  #       uses: EndBug/add-and-commit@v7
-  #       with:
-  #         add: docs/
-  #         branch: gh-page
-  #         message: Auto Update index.html
-  #         author_name: Mark Reyes
-  #         committer_name: GitHub Actions
-  #         committer_email: actions@github.com
+      - name: Publish GH Page
+        uses: EndBug/add-and-commit@v7
+        with:
+          add: docs/
+          branch: gh-page
+          message: Auto Update index.html
+          author_name: Mark Reyes
+          committer_name: GitHub Actions
+          committer_email: actions@github.com
