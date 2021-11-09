@@ -220,14 +220,14 @@ education:
 #   date: 2014-11-01
 #   awarder: Techcrunch
 #   summary: There is no spoon.
-# references:
-# - name: Manny Patino
-#   reference: |
-#     Mark is fantastic to work with. He's constantly working on growing his
-#     skillset and looking for ways to make work more efficient. His dedication to
-#     his job and learning new skills on and off the job is inspirational and
-#     admirable. I would highly recommend Mark for any engineering or leadership
-#     position.
+references:
+- name: Manny Patino
+  reference: |
+    Mark is fantastic to work with. He's constantly working on growing his
+    skillset and looking for ways to make work more efficient. His dedication to
+    his job and learning new skills on and off the job is inspirational and
+    admirable. I would highly recommend Mark for any engineering or leadership
+    position.
 
 # - name: Byron Moore
 #   reference: |
