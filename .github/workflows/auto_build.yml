@@ -122,42 +122,62 @@ jobs:
           name: resume.pdf
           path: ${{ github.workspace }}/resume.pdf
 
-  Deploy-To-GHPage:
-  # Make a commit to the gh-page branch
+      - name: Check Modified Files
+        id: check_files
+        run: |
+          echo "=============== list modified files ==============="
+          git diff --name-only HEAD^ HEAD
+          
+          echo "========== check paths of modified files =========="
+          git diff --name-only HEAD^ HEAD > files.txt
+          while IFS= read -r file
+          do
+            echo $file
+            if [[ $file != 'resume.yml' ]]; then
+              echo "Modified files are not important to updating the docs/resume.index"
+              echo "::set-output name=run_job::false"
+              break
+            else
+              echo "::set-output name=run_job::true"
+            fi
+          done < files.txt
 
-    name: Updating Index.html 🏗
-    needs: [Convert-Resume-HTML, Convert-Resume-PDF]
-    runs-on: ubuntu-20.04
-    steps:
+  # Deploy-To-GHPage:
+  # # Make a commit to the gh-page branch
 
-      - name: Check out repository code
-        uses: actions/checkout@v2
-        # with:
-        #   ref: gh-page
+  #   name: Updating Index.html 🏗
+  #   needs: [Convert-Resume-HTML, Convert-Resume-PDF]
+  #   runs-on: ubuntu-20.04
+  #   steps:
 
-      - name: Download the resume HTML artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: resume.html
+  #     - name: Check out repository code
+  #       uses: actions/checkout@v2
+  #       # with:
+  #       #   ref: gh-page
 
-      - name: Download the resume PDF artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: resume.pdf
+  #     - name: Download the resume HTML artifact
+  #       uses: actions/download-artifact@v2
+  #       with:
+  #         name: resume.html
 
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+  #     - name: Download the resume PDF artifact
+  #       uses: actions/download-artifact@v2
+  #       with:
+  #         name: resume.pdf
 
-      - run: mkdir docs && mv resume.html docs/index.html
-      - run: mv resume.pdf docs/resume_${{ steps.date.outputs.date }}.pdf
+  #     - name: Get current date
+  #       id: date
+  #       run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
-      - name: Publish GH Page
-        uses: EndBug/add-and-commit@v7
-        with:
-          add: docs/
-          branch: gh-page
-          message: Auto Update index.html
-          author_name: Mark Reyes
-          committer_name: GitHub Actions
-          committer_email: actions@github.com
+  #     - run: mkdir docs && mv resume.html docs/index.html
+  #     - run: mv resume.pdf docs/resume_${{ steps.date.outputs.date }}.pdf
+
+  #     - name: Publish GH Page
+  #       uses: EndBug/add-and-commit@v7
+  #       with:
+  #         add: docs/
+  #         branch: gh-page
+  #         message: Auto Update index.html
+  #         author_name: Mark Reyes
+  #         committer_name: GitHub Actions
+  #         committer_email: actions@github.com

@@ -1,6 +1,7 @@
 venv
 node_modules
 package-lock.json
+.vscode
 
 # Locally built resume files
 resume.json
