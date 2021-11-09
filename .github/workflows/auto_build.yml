@@ -159,7 +159,7 @@ jobs:
   # Make a commit to the gh-page branch
 
     name: Updating Index.html 🏗
-    needs: [Convert-Resume-HTML, Convert-Resume-PDF]
+    # needs: [Convert-Resume-HTML, Convert-Resume-PDF]
     needs: Check-Files-Diff
     if: needs.Check-Files-Diff.outputs.run_job == 'true'
     runs-on: ubuntu-20.04
