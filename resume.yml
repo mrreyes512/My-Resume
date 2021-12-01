@@ -9,10 +9,10 @@ basics:
   phone: (512) 790-0901
   # website: https://registry.jsonresume.org/mark_reyes
   summary: Proud Naval Veteran. Charismatic leader. Habitual learner. After
-    four years in the Navy as an IT, I started my 13 year venture with a major ISP
+    four years in the Navy as an IT, I started my 14 year venture with a major ISP
     in Austin, in which I've experienced a tremendous amount of growth. I spent
     four years in field service with Spectrum, and eight years in various Engineering
-    roles, with the last year leading a team of Network Developers. Now, as a Manager
+    roles, with the last position leading a team of Network Developers. As a Manager
     for a Network Development team, it has strengthened my foundation in guiding projects
     which lead toward corporate goals and building a strong development culture which is
     envious to work in.
@@ -21,7 +21,7 @@ basics:
     contribute to the group's potential. This resulted in establishing a clear
     direction and success in achieving our strategic goals as a
     business unit. I believe my unique blend of Charismatic/Servant leadership
-    style is a testament to the team's growth and ultimate successes!
+    style is a testament to any team's growth and ultimate successes!
   location:
     # address: 2559 Santa Barbara Loop
     postalCode: TX 78665
@@ -128,14 +128,15 @@ work:
     startDate: 2011-03-01
     endDate: 2012-04-01
     summary: |
-      While in Spectrum's NOC we maintained the network integrity of the
-      hybrid-fiber coax network used for CPE digital cable box reception and
-      high-speed Internet. Other monitored services included: Video-on-Demand
-      service group utilization, CMTS network elements, Regional Transport
-      Network, Customer Edge Network, and Spectrum network We collaborated TAC and
-      division dispatch teams to resolve issues found. Investigated network
-      problems using various tools including; Unified, NYROC, SPECTRUM, Tivoli
-      Integrated Portal, and other tool suites.
+      Spectrum's Regional Network Operation Center(RNOC) Level 1 and Level 2.
+    #   While in Spectrum's NOC we maintained the network integrity of the
+    #   hybrid-fiber coax network used for CPE digital cable box reception and
+    #   high-speed Internet. Other monitored services included: Video-on-Demand
+    #   service group utilization, CMTS network elements, Regional Transport
+    #   Network, Customer Edge Network, and Spectrum network We collaborated TAC and
+    #   division dispatch teams to resolve issues found. Investigated network
+    #   problems using various tools including; Unified, NYROC, SPECTRUM, Tivoli
+    #   Integrated Portal, and other tool suites.
     highlights: []
 
   - position: Broadband Tech
@@ -144,14 +145,15 @@ work:
     startDate: 2007-04-01
     endDate: 2011-03-01
     summary: |
-      When in the field, I troubleshot and repaired field problems from
-      subscribers’ homes to bridge amplifiers. Responded to subscriber technical
-      service calls. Ensured a signal quality within Federal Communications
-      Commission standards and strength using various meters and tools. Replaced
-      sub-efficient drop cable, house cable, telephone, and Ethernet cable.
-      Conducted signal egress / ingress testing and repairs using signal seekers
-      and test meters to locate cracks in feeder system lines. Repaired cable
-      system leaks as regulated annually by the FCC.
+      Layer 1 field installation and troubleshooting for residential customers.
+    #   When in the field, I troubleshot and repaired field problems from
+    #   subscribers’ homes to bridge amplifiers. Responded to subscriber technical
+    #   service calls. Ensured a signal quality within Federal Communications
+    #   Commission standards and strength using various meters and tools. Replaced
+    #   sub-efficient drop cable, house cable, telephone, and Ethernet cable.
+    #   Conducted signal egress / ingress testing and repairs using signal seekers
+    #   and test meters to locate cracks in feeder system lines. Repaired cable
+    #   system leaks as regulated annually by the FCC.
     highlights: []
 
   - position: Information Systems Technician
@@ -160,13 +162,14 @@ work:
     startDate: 2003-02-01
     endDate: 2007-02-01
     summary: |
-      While in the Navy I Deployed local area networks, monitored traffic flow on
-      servers and preformed daily backups on servers. I installed and operated
-      various computer software on client machines, re-imaged when needed. As
-      well, we complied with US government requirements for secure communications
-      via HF, UHF, and VHF frequencies. Performed operational tests and required
-      adjustments on circuits. We maintained and replaced various antennas.  And we
-      proactively identified interference and jamming frequencies to superiors.
+      My time in the Navy was a brief 4 years and arose through the ranks of E1 - E4.
+    #   While in the Navy I Deployed local area networks, monitored traffic flow on
+    #   servers and preformed daily backups on servers. I installed and operated
+    #   various computer software on client machines, re-imaged when needed. As
+    #   well, we complied with US government requirements for secure communications
+    #   via HF, UHF, and VHF frequencies. Performed operational tests and required
+    #   adjustments on circuits. We maintained and replaced various antennas.  And we
+    #   proactively identified interference and jamming frequencies to superiors.
 
 # Relevant Skills
 # ================================================
@@ -202,14 +205,14 @@ skills:
 # Education
 # ================================================
 education:
-  - institution: Navy
+  - institution: United States Navy
     area: Information Technology
-    studyType: General
+    studyType: Computer Sciences
     startDate: 2003-02-01
     endDate: 2007-02-01
   - institution: Austin Community College
     area: Cisco Network Academy
-    studyType: Network Technology
+    studyType: Network Engineering and Technology
     startDate: 2010-02-01
     endDate: 2011-06-01
 
@@ -220,14 +223,14 @@ education:
 #   date: 2014-11-01
 #   awarder: Techcrunch
 #   summary: There is no spoon.
-references:
-  - name: Manny Patino
-    reference: |
-      Mark is fantastic to work with. He's constantly working on growing his
-      skillset and looking for ways to make work more efficient. His dedication to
-      his job and learning new skills on and off the job is inspirational and
-      admirable. I would highly recommend Mark for any engineering or leadership
-      position.
+# references:
+#   - name: Manny Patino
+#     reference: |
+#       Mark is fantastic to work with. He's constantly working on growing his
+#       skillset and looking for ways to make work more efficient. His dedication to
+#       his job and learning new skills on and off the job is inspirational and
+#       admirable. I would highly recommend Mark for any engineering or leadership
+#       position.
 
 # - name: Byron Moore
 #   reference: |
@@ -282,7 +285,6 @@ references:
 #     past midnight, verifying the deployment was successful.  He’s supportive, he
 #     cares, and he’s willing to go the distance by your side to help get the job
 #     done for the team.  My answer is a clear-cut “Yes”.
-
 
 # - name: Jerry Sessom
 #   reference: |
