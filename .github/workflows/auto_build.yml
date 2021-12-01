@@ -183,7 +183,7 @@ jobs:
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
-      - run: mkdir docs && mv resume.html docs/index.html
+      - run: mkdir -p docs && mv resume.html docs/index.html
       - run: mv resume.pdf docs/resume_${{ steps.date.outputs.date }}.pdf
 
       - name: Publish GH Page
