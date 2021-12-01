@@ -79,7 +79,7 @@ work:
       allow a project to fail-fast and be agile enough to take new direction at the speed
       of business needs.
       As a secondary hat, I developed scalable playbooks with Ansible roles to systematically
-      deploy our network orchestrator. This effort cut down countless houman hours during
+      deploy our network orchestrator. This effort cut down countless human hours during
       our production deployments and regression testing.
     highlights:
       - 'Project Lead: Port Activation'
