@@ -54,15 +54,19 @@ work:
       job functions were transitioned. Discovering a clear career path and building a
       collaborative culture were some of the small difficulties to overcome.
       Once our Service Reliability Engineering team was estabilished, I guided them to
-      continue development of scalable Ansible Playbooks for Automated Deployments in our
-      Production Environment; Building automated regression tests using GitLab CI/CD and
-      Jenkins; and Containerizing legacy applications in Docker.
+      continue developing scalable Ansible Playbooks for Automated Deployments in our
+      Production Environment. We reduced deployment time to production by Automating
+      Regression Testing of existing functionality. As well we containerized legacy 
+      applications in Docker files allowing ease of installation in multiple 
+      testing enviornments.
     highlights:
       - 'Established an environment with three vertical slice teams involving over twenty
             developers and three Area Product Owners'
-      - 'Guided my development team to automate a manual process which saved Spectrum a
-            projected estimate of one million dollars in Capital Expense'
-      - 'Deployment automations using Ansible Roles allowing a scalable cookbook'
+      - 'Guided my development team to automate a manual process using Python scripts 
+            which saved Spectrum a projected estimate of one million dollars in Capital
+            Expense'
+      - 'Created a scalable Ansible frame work with Roles for covering Server Health, 
+            Automated Application Building, and Pushbutton Deployment Automations'
 
   - position: Sr Network Developer
     company: Spectrum Enterprise
@@ -72,13 +76,13 @@ work:
     summary: |
       Our primary focus was to improve efficiencies of our work-order pipeline by means
       of automating the provisioning of network services. We participated in regular code
-      reviews and followed the principles outlined in gitflow. Our automated build pipeline(CI/CD)
+      reviews and followed the principles outlined in Gitflow. Our automated build pipeline(CI/CD)
       was run through jobs executed by GitLab Runners and Jenkins Jobs. Daily Stand-ups
       ensured communication and transparency among the Scrum Team. We demonstrated our
       progress to Stakeholders and Product Owners at a per Sprint Iteration. This would
       allow a project to fail-fast and be agile enough to take new direction at the speed
       of business needs.
-      As a secondary hat, I developed scalable playbooks with Ansible roles to systematically
+      As a secondary hat, I developed scalable playbooks with Ansible Roles to systematically
       deploy our network orchestrator. This effort cut down countless human hours during
       our production deployments and regression testing.
     highlights:
@@ -108,18 +112,19 @@ work:
     startDate: 2012-04-01
     endDate: 2014-07-01
     summary: |
-      With Spectrum Enterprise's Network Engineering team I was free to improve
+      With Spectrum Enterprise's Network Engineering team I provisioned Network TCP/IP 
+      circuits across a cross-platform network comprised of; Cisco, Juniper, Alcatel, 
+      Adva, and RAD equipment. Utilizing a command line interface to troubleshoot routing
+      protocols such as OSPF, MPLS, BGP, and ISIS on occasion.
+      As well, I was free to improve
       processes for departmental procedures within the Commercial Network. I
-      developed multiple scripts for identified inefficiencies within a team’s
-      current workflow. I built reports based on various criteria and equipment
-      vendor challenges. I was able to push multi-line configuration changes to
-      1000’s of various equipment based on security updates or network needs. I
-      was required to present data collected from network-wide collections so that
-      upper management can interpret and understand network trends and
+      developed multiple scripts to improve inefficiencies within our Provisioning
+      team’s workflow. I built reports based on various criteria and equipment
+      vendor challenges. I developed scripts that pushed configuration 
+      changes to 1000’s of various equipment based on security updates or network 
+      needs. I was required to present data collected from network-wide collections so
+      thatupper management can interpret and understand network trends and 
       peculiarities.
-      As well, I provisioned circuits as requested by Business Class customers
-      across a cross-platform network comprised of; Cisco, Juniper, Alcatel, Adva,
-      and RAD equipment utilizing command line interface.
     highlights: []
 
   - position: NOC Analysist
@@ -128,15 +133,14 @@ work:
     startDate: 2011-03-01
     endDate: 2012-04-01
     summary: |
-      Spectrum's Regional Network Operation Center(RNOC) Level 1 and Level 2.
-    #   While in Spectrum's NOC we maintained the network integrity of the
-    #   hybrid-fiber coax network used for CPE digital cable box reception and
-    #   high-speed Internet. Other monitored services included: Video-on-Demand
-    #   service group utilization, CMTS network elements, Regional Transport
-    #   Network, Customer Edge Network, and Spectrum network We collaborated TAC and
-    #   division dispatch teams to resolve issues found. Investigated network
-    #   problems using various tools including; Unified, NYROC, SPECTRUM, Tivoli
-    #   Integrated Portal, and other tool suites.
+      While in Spectrum's NOC we maintained the network integrity of the
+      hybrid-fiber coax network used for CPE digital cable box reception and
+      high-speed Internet. Other monitored services included; Video-on-Demand
+      service group utilization, CMTS network elements, Regional Transport
+      Network, Customer Edge Network, and Spectrum network We collaborated TAC and
+      division dispatch teams to resolve issues found. Investigated network
+      problems using various tools including; Unified, NYROC, SPECTRUM, Tivoli
+      Integrated Portal, and other tool suites.
     highlights: []
 
   - position: Broadband Tech
@@ -145,15 +149,14 @@ work:
     startDate: 2007-04-01
     endDate: 2011-03-01
     summary: |
-      Layer 1 field installation and troubleshooting for residential customers.
-    #   When in the field, I troubleshot and repaired field problems from
-    #   subscribers’ homes to bridge amplifiers. Responded to subscriber technical
-    #   service calls. Ensured a signal quality within Federal Communications
-    #   Commission standards and strength using various meters and tools. Replaced
-    #   sub-efficient drop cable, house cable, telephone, and Ethernet cable.
-    #   Conducted signal egress / ingress testing and repairs using signal seekers
-    #   and test meters to locate cracks in feeder system lines. Repaired cable
-    #   system leaks as regulated annually by the FCC.
+      When in the field, I troubleshot and repaired field problems from
+      subscribers’ homes to bridge amplifiers. Responded to subscriber technical
+      service calls. Ensured a signal quality within Federal Communications
+      Commission standards and strength using various meters and tools. Replaced
+      sub-efficient drop cable, house cable, telephone, and Ethernet cable.
+      Conducted signal egress / ingress testing and repairs using signal seekers
+      and test meters to locate cracks in feeder system lines. Repaired cable
+      system leaks as regulated annually by the FCC.
     highlights: []
 
   - position: Information Systems Technician
@@ -163,13 +166,13 @@ work:
     endDate: 2007-02-01
     summary: |
       My time in the Navy was a brief 4 years and arose through the ranks of E1 - E4.
-    #   While in the Navy I Deployed local area networks, monitored traffic flow on
-    #   servers and preformed daily backups on servers. I installed and operated
-    #   various computer software on client machines, re-imaged when needed. As
-    #   well, we complied with US government requirements for secure communications
-    #   via HF, UHF, and VHF frequencies. Performed operational tests and required
-    #   adjustments on circuits. We maintained and replaced various antennas.  And we
-    #   proactively identified interference and jamming frequencies to superiors.
+      While in the Navy I Deployed local area networks, monitored traffic flow on
+      servers and preformed daily backups on servers. I installed and operated
+      various computer software on client machines, re-imaged when needed. As
+      well, we complied with US government requirements for secure communications
+      via HF, UHF, and VHF frequencies. Performed operational tests and required
+      adjustments on circuits. We maintained and replaced various antennas.  And we
+      proactively identified interference and jamming frequencies to superiors.
 
 # Relevant Skills
 # ================================================
