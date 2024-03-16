@@ -3,25 +3,15 @@
 # ================================================
 basics:
   name: Mark Reyes
-  label: Manager Network Development
+  label: Site Reliability Engineer
   picture: https://raw.githubusercontent.com/mrreyes512/resume/master/my_profile.png
   email: mrreyes512@gmail.com
   phone: (512) 790-0901
   # website: https://registry.jsonresume.org/mark_reyes
-  summary: Proud Naval Veteran. Charismatic leader. Habitual learner. After
-    four years in the Navy as an IT, I started my 14 year venture with a major ISP
-    in Austin, in which I've experienced a tremendous amount of growth. I spent
-    four years in field service with Spectrum, and eight years in various Engineering
-    roles, with the last position leading a team of Network Developers. As a Manager
-    for a Network Development team, it has strengthened my foundation in guiding projects
-    which lead toward corporate goals and building a strong development culture which is
-    envious to work in.
-    Taking the helm of a cross-functional team has allowed me to build trust from
-    individuals and inspire greatness by coaching member's strengths, helping them
-    contribute to the group's potential. This resulted in establishing a clear
-    direction and success in achieving our strategic goals as a
-    business unit. I believe my unique blend of Charismatic/Servant leadership
-    style is a testament to any team's growth and ultimate successes!
+  summary: >
+    As a proud Naval Veteran, I transitioned from four years of dedicated service in the Navy as an IT to embark on a successful 14-year journey with a major ISP in Austin. 
+
+    In my latest role as a Site Reliability Engineer within CIO’s Network as a Service team, I have shifted my efforts to optimizing operational efficiency through automation. With a specialized focus on our team's Security Compliance and alignment with CISO guidelines, I am dedicated to driving excellence and ensuring seamless operations within the organization.
   location:
     # address: 2559 Santa Barbara Loop
     postalCode: TX 78665
@@ -42,13 +32,28 @@ basics:
 # Work Experience
 # ================================================
 work:
+  - position: Site Reliability Engineer
+    company: IBM
+    website: https://www.ibm.com/careers
+    startDate: 2022-03-01
+    endDate: 2024-04-12
+    summary: >
+      As a Site Reliability Engineer within CIO's Network as a Service team, my primary responsibility revolves around automating manual tasks that reduce human time required for complex procedures or deployments.
+      In my role as the team's Security Focal, I am dedicated to automating Security Compliance requirements outlined by ITSS using the CISO/BISO guidelines for Infrastructure Security Requirements. Over the past five quarters, I have served as the trusted Technical Owner Delegate for our team's Quarterly Security Assessments (formerly MSAC), consistently achieving successful outcomes with minimal findings requiring attention.
+      For Application Security I designed a Jenkins Pipelines that followed the Code Signing Service using Skopeo to publish to Garantir GaraSign. Enhancements for automated vulnerability scanning using Twistlock which published results to our Artifactory Repo was also used to keep our team in compliance with ITSS Ch. 5.
+      As a Subject Matter Expert in promoting new feature sets for BlueFringe production, I've led over 20 deployments within a Sprint-based release framework. By optimizing our procedures, I've transformed the deployment process from a multi-day endeavor into a streamlined, repeatable procedure completed in just a few hours.
+    highlights:
+      - Technical Owner Delegate for Quarterly MSACs
+      - Automated Code Signing Services for ITSS Ch. 5
+      - Image Scanning Automation using Twistlock during build process
+      - Defined a repeatable procedure for BlueFringe Deployments
   - position: Manager Network Development
     company: Spectrum Enterprise
     website: https://business.spectrum.com/
     startDate: 2019-04-01
-    endDate: 2021-12-31
+    endDate: 2022-03-01
     summary: |
-      During my time as the Manager of a Network Development Team in Spectrum, I worked
+      During my time as the Manager of a Network Development Team at Spectrum, I worked
       together with a management team to transition a team of twenty Network Engineers
       into Network Developers. This included guiding many into unclear territory as their
       job functions were transitioned. Discovering a clear career path and building a
@@ -70,7 +75,7 @@ work:
     startDate: 2016-04-01
     endDate: 2019-04-01
     summary: |
-      Our primary focus was to improve efficiencies of our work-order pipeline by means
+      At Spectrum Enterprise, our primary focus was to improve efficiencies of our work-order pipeline by means
       of automating the provisioning of network services. We participated in regular code
       reviews and followed the principles outlined in gitflow. Our automated build pipeline(CI/CD)
       was run through jobs executed by GitLab Runners and Jenkins Jobs. Daily Stand-ups
@@ -176,16 +181,23 @@ work:
 # Skill level should be:
 # 1)Fundamental Awareness 2) Novice 3) Intermediate 4)Advanced 5)Expert
 skills:
+  - name: Security Compliance
+    level: Intermediate
+    keywords:
+      - MSAC
+      - Twistlock
+      - Mend / Whitesource
+      - Garantir GaraSign
+      - Skopeo
   - name: Software Development
     level: Advanced
     keywords:
-      - Ansible Master
+      - Ansible
       - Application Containerization
       - CI/CD
       - Docker Orchestration
       - Gitflow
       - Jenkins - GitLab - Travis CI
-      - Message Brokers
       - RESTFUL HTTP APIs
       - Test Driven Development
   - name: Network Engineering

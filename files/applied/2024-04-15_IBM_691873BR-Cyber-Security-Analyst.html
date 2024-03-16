@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Mark Reyes</title>
+      <meta name="description" content="As a proud Naval Veteran, I transitioned from four years of dedicated service in the Navy as an IT to embark on a successful 14-year journey with a major ISP in Austin.
+      In my latest role as a Site Reliability Engineer within CIO’s Network as a Service team, I have shifted my efforts to optimizing operational efficiency through automation. With a specialized focus on our team&#x27;s Security Compliance and alignment with CISO guidelines, I am dedicated to driving excellence and ensuring seamless operations within the organization.
+      ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>:root {
+  color-scheme: light dark;
+
+  --color-background: #ffffff;
+  --color-primary: #212529;
+  --color-secondary: #95a5a6;
+  --color-muted: #f4f6f6;
+  --color-accent: #f1c40f;
+  --color-link: #2ecc71;
+
+  --scale-ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--scale-ratio));
+  --scale2: calc(var(--scale1) * var(--scale-ratio));
+  --scale3: calc(var(--scale2) * var(--scale-ratio));
+  --scale4: calc(var(--scale3) * var(--scale-ratio));
+  --scale5: calc(var(--scale4) * var(--scale-ratio));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #181a1b;
+    --color-primary: #d1cdc7;
+    --color-secondary: #aaa398;
+    --color-muted: #1e2021;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-primary);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
+}
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.4em;
+}
+
+li::marker,
+.network {
+  color: var(--color-secondary);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:focus,
+a:hover {
+  color: var(--color-accent);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--color-secondary);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--color-accent);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--scale2);
+}
+
+h5 {
+  font-size: var(--scale1);
+}
+
+h6 {
+  font-size: var(--scale0);
+}
+
+blockquote {
+  border-left: 0.2em solid var(--color-muted);
+  padding-left: 1em;
+}
+
+cite {
+  color: var(--color-secondary);
+  font-style: inherit;
+}
+
+cite::before {
+  content: '— ';
+}
+
+svg {
+  margin-right: 0.2em;
+  vertical-align: -0.2em;
+}
+
+.masthead {
+  background: var(--color-muted);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.masthead > *,
+section {
+  grid-column: main;
+}
+
+.masthead > img {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 12em;
+}
+
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
+
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
+
+.spaced-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spaced-list::before {
+  border-bottom: 1px solid var(--color-muted);
+  content: '';
+  flex-grow: 1;
+  margin: 0 1em;
+  order: 1;
+}
+
+.spaced-list > :nth-child(2) {
+  order: 2;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--color-muted);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead {
+    text-align: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  .masthead img {
+    grid-column: side;
+    grid-row: span 2;
+    max-width: 100%;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+        <div>
+            <h1>Mark Reyes</h1>
+            <h2>Site Reliability Engineer</h2>
+        </div>
+          <article>
+            <p>As a proud Naval Veteran, I transitioned from four years of dedicated service in the Navy as an IT to embark on a successful 14-year journey with a major ISP in Austin.
+      In my latest role as a Site Reliability Engineer within CIO’s Network as a Service team, I have shifted my efforts to optimizing operational efficiency through automation. With a specialized focus on our team's Security Compliance and alignment with CISO guidelines, I am dedicated to driving excellence and ensuring seamless operations within the organization.</p>
+      
+          </article>
+        <ul class="icon-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Round Rock, United States
+              </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:mark.reyes@ibm.com">mark.reyes@ibm.com</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:5127900901">(512) 790-0901</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <a href="https://www.linkedin.com/in/mrreyes512/">mrreyes512</a>
+                <span class="network">(LinkedIn)</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <a href="https://github.com/mrreyes512/">mrreyes512</a>
+                <span class="network">(GitHub)</span>
+            </li>
+        </ul>
+      </header>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Site Reliability Engineer</h4>
+                  <span>
+                    <time datetime="2022-03-01">Feb 2022</time> –
+                    <time datetime="2024-04-12">Apr 2024</time>
+                  </span>
+                </div>
+                <strong></strong>
+              </header>
+                <p>As a Site Reliability Engineer within CIO's Network as a Service team, my primary responsibility revolves around automating manual tasks that reduce human time required for complex procedures or deployments. </p>
+                <p>In my role as the team's Security Focal, I am dedicated to automating Security Compliance requirements outlined by ITSS using the CISO/BISO guidelines for Infrastructure Security Requirements. Over the past five quarters, I have served as the trusted Technical Owner Delegate for our team's Quarterly Security Assessments (formerly MSAC), consistently achieving successful outcomes with minimal findings requiring attention. </p>
+                <p>For Application Security I designed a Jenkins Pipelines that followed the Code Signing Service using Skopeo to publish to Garantir GaraSign. Enhancements for automated vulnerability scanning using Twistlock which published results to our Artifactory Repository was also used to keep our team in compliance with ITSS Ch. 5. </p>
+                <p>As a Subject Matter Expert in promoting new feature sets for BlueFringe production, I've led over 20 deployments within a Sprint-based release framework. By optimizing our procedures, I've transformed the deployment process from a multi-day endeavor into a streamlined, repeatable procedure completed in just a few hours.</p>
+    
+                <ul>
+                    <li><p>Technical Owner Delegate for Quarterly MSACs</p></li>
+                    <li><p>Automated Code Signing Services for ITSS Ch. 5</p></li>
+                    <li><p>Image Scanning Automation using Twistlock during build process</p></li>
+                    <li><p>Defined a repeatable procedure for BlueFringe Deployments</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Manager Network Development</h4>
+                  <span>
+                    <time datetime="2019-04-01">Mar 2019</time> –
+                    <time datetime="2022-03-01">Feb 2022</time>
+                  </span>
+                </div>
+                <strong></strong>
+              </header>
+                <p>During my time as the Manager of a Network Development Team at Spectrum, I worked
+    together with a management team to transition a team of twenty Network Engineers
+    into Network Developers. This included guiding many into unclear territory as their
+    job functions were transitioned. Discovering a clear career path and building a
+    collaborative culture were some of the small difficulties to overcome.
+    Once our Service Reliability Engineering team was estabilished, I guided them to
+    continue development of scalable Ansible Playbooks for Automated Deployments in our
+    Production Environment; Building automated regression tests using GitLab CI/CD and
+    Jenkins; and Containerizing legacy applications in Docker.</p>
+    
+                <ul>
+                    <li><p>Established an environment with three vertical slice teams involving over twenty developers and three Area Product Owners</p></li>
+                    <li><p>Guided my development team to automate a manual process which saved Spectrum a projected estimate of one million dollars in Capital Expense</p></li>
+                    <li><p>Deployment automations using Ansible Roles allowing a scalable cookbook</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Sr Network Developer</h4>
+                  <span>
+                    <time datetime="2016-04-01">Mar 2016</time> –
+                    <time datetime="2019-04-01">Mar 2019</time>
+                  </span>
+                </div>
+                <strong></strong>
+              </header>
+                <p>At Spectrum Enterprise, our primary focus was to improve efficiencies of our work-order pipeline by means
+    of automating the provisioning of network services. We participated in regular code
+    reviews and followed the principles outlined in gitflow. Our automated build pipeline(CI/CD)
+    was run through jobs executed by GitLab Runners and Jenkins Jobs. Daily Stand-ups
+    ensured communication and transparency among the Scrum Team. We demonstrated our
+    progress to Stakeholders and Product Owners at a per Sprint Iteration. This would
+    allow a project to fail-fast and be agile enough to take new direction at the speed
+    of business needs.
+    As a secondary hat, I developed scalable playbooks with Ansible roles to systematically
+    deploy our network orchestrator. This effort cut down countless human hours during
+    our production deployments and regression testing.</p>
+    
+                <ul>
+                    <li><p>Project Lead: Port Activation</p></li>
+                    <li><p>Testing Lead: Andromeda Project</p></li>
+                    <li><p>Development Lead: Systematic Deployments with Ansible</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Sr Systems Engineer</h4>
+                  <span>
+                    <time datetime="2014-07-01">Jun 2014</time> –
+                    <time datetime="2016-04-01">Mar 2016</time>
+                  </span>
+                </div>
+                <strong></strong>
+              </header>
+                <p>In a Systems Role, I developed modules for a Network Device Orchestration
+    Suite of tools, which automated common tasks in various software sets when a
+    new network element was discovered. Communicated to multiple groups when
+    changes were going to affect existing architecture. Developed multiple
+    scripts for operational groups based on requirements expressed. Troubleshot
+    issues as needed when network automation systems failed, or were reported
+    via trouble tickets.</p>
+    
+                <ul>
+                    <li><p>Application Development: Coffee Reports</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Network Engineer</h4>
+                  <span>
+                    <time datetime="2012-04-01">Mar 2012</time> –
+                    <time datetime="2014-07-01">Jun 2014</time>
+                  </span>
+                </div>
+                <strong></strong>
+              </header>
+                <p>With Spectrum Enterprise's Network Engineering team I was free to improve
+    processes for departmental procedures within the Commercial Network. I
+    developed multiple scripts for identified inefficiencies within a team’s
+    current workflow. I built reports based on various criteria and equipment
+    vendor challenges. I was able to push multi-line configuration changes to
+    1000’s of various equipment based on security updates or network needs. I
+    was required to present data collected from network-wide collections so that
+    upper management can interpret and understand network trends and
+    peculiarities.
+    As well, I provisioned circuits as requested by Business Class customers
+    across a cross-platform network comprised of; Cisco, Juniper, Alcatel, Adva,
+    and RAD equipment utilizing command line interface.</p>
+    
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>NOC Analysist</h4>
+                  <span>
+                    <time datetime="2011-03-01">Feb 2011</time> –
+                    <time datetime="2012-04-01">Mar 2012</time>
+                  </span>
+                </div>
+                <strong></strong>
+              </header>
+                <p>Spectrum's Regional Network Operation Center(RNOC) Level 1 and Level 2.</p>
+    
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Broadband Tech</h4>
+                  <span>
+                    <time datetime="2007-04-01">Mar 2007</time> –
+                    <time datetime="2011-03-01">Feb 2011</time>
+                  </span>
+                </div>
+                <strong></strong>
+              </header>
+                <p>Layer 1 field installation and troubleshooting for residential customers.</p>
+    
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Information Systems Technician</h4>
+                  <span>
+                    <time datetime="2003-02-01">Jan 2003</time> –
+                    <time datetime="2007-02-01">Jan 2007</time>
+                  </span>
+                </div>
+                <strong></strong>
+              </header>
+                <p>My time in the Navy was a brief 4 years and arose through the ranks of E1 - E4.</p>
+    
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>United States Navy</h4>
+                  <span>
+                    <time datetime="2003-02-01">Jan 2003</time> –
+                    <time datetime="2007-02-01">Jan 2007</time>
+                  </span>
+                </div>
+                  <strong>Information Technology</strong>
+              </header>
+                <p>Computer Sciences</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Austin Community College</h4>
+                  <span>
+                    <time datetime="2010-02-01">Jan 2010</time> –
+                    <time datetime="2011-06-01">May 2011</time>
+                  </span>
+                </div>
+                  <strong>Cisco Network Academy</strong>
+              </header>
+                <p>Network Engineering and Technology</p>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+              <div>
+                <h4>Security Compliance</h4>
+                <ul class="tag-list">
+                    <li>MSAC</li>
+                    <li>Twistlock</li>
+                    <li>Mend / Whitesource</li>
+                    <li>Garantir GaraSign</li>
+                    <li>Skopeo</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Software Development</h4>
+                <ul class="tag-list">
+                    <li>Ansible</li>
+                    <li>Application Containerization</li>
+                    <li>CI/CD</li>
+                    <li>Docker Orchestration</li>
+                    <li>Gitflow</li>
+                    <li>Jenkins - GitLab - Travis CI</li>
+                    <li>Message Brokers</li>
+                    <li>RESTFUL HTTP APIs</li>
+                    <li>Test Driven Development</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Network Engineering</h4>
+                <ul class="tag-list">
+                    <li>IP Filtering / ACLs</li>
+                    <li>Network Protocols</li>
+                    <li>Routing Protocols</li>
+                    <li>Subnet Addressing</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Telecom</h4>
+                <ul class="tag-list">
+                    <li>Cable Attenuation</li>
+                    <li>DOCSIS</li>
+                    <li>Hybrid Fiber Coax</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+  </body>
+</html>
