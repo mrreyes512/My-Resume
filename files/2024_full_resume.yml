@@ -1,0 +1,363 @@
+---
+# Basic Resume Info
+# ================================================
+basics:
+  name: Mark Reyes
+  label: Site Reliability Engineer
+  picture: https://raw.githubusercontent.com/mrreyes512/resume/master/my_profile.png
+  email: mrreyes512@gmail.com
+  phone: (512) 790-0901
+  # website: https://registry.jsonresume.org/mark_reyes
+  summary: >
+    As a proud Naval Veteran, I transitioned from four years of dedicated
+    service in the Navy as an IT to embark on a successful 14-year journey with
+    a major ISP in Austin. 
+
+    In my latest role as a Site Reliability Engineer within CIO's Network as a
+    Service team, I have shifted my efforts to optimizing operational efficiency
+    through automation. With a specialized focus on our team's Security
+    Compliance and alignment with CISO guidelines, I am dedicated to driving
+    excellence and ensuring seamless operations within the organization.
+  location:
+    # address: 321 Main Street
+    postalCode: TX 78665
+    city: Round Rock
+    countryCode: US
+    region: Texas
+  profiles:
+    - network: LinkedIn
+      username: mrreyes512
+      url: https://www.linkedin.com/in/mrreyes512/
+    - network: GitHub
+      username: mrreyes512
+      url: https://github.com/mrreyes512/
+  #   - network: JSON Resume
+  #     username: mark_reyes
+  #     url: https://registry.jsonresume.org/mark_reyes
+
+# Work Experience
+# ================================================
+work:
+  - position: Site Reliability Engineer
+    company: IBM
+    website: https://www.ibm.com/careers
+    startDate: 2022-03-01
+    endDate: 2024-04-12
+    summary: >
+      As a Site Reliability Engineer within CIO's Network as a Service team, my
+      primary responsibility revolves around automating manual tasks that reduce
+      human time required for complex procedures or deployments.
+
+      In my role as the team's Security Focal, I am dedicated to automating
+      Security Compliance requirements outlined by ITSS using the CISO/BISO
+      guidelines for Infrastructure Security Requirements. Over the past five
+      quarters, I have served as the trusted Technical Owner Delegate for our
+      team's Quarterly Security Assessments (formerly MSAC), consistently
+      achieving successful outcomes with minimal findings requiring attention.
+
+      For Application Security I designed a Jenkins Pipelines that followed the
+      Code Signing Service using Skopeo to publish to Garantir GaraSign.
+      Enhancements for automated vulnerability scanning using Twistlock which
+      published results to our Artifactory Repo was also used to keep our team
+      in compliance with ITSS Ch. 5.
+
+      As a Subject Matter Expert in promoting new feature sets for BlueFringe
+      production, I've led over 20 deployments within a Sprint-based release
+      framework. By optimizing our procedures, I've transformed the deployment
+      process from a multi-day endeavor into a streamlined, repeatable procedure
+      completed in just a few hours.
+    highlights:
+      - Technical Owner Delegate for Quarterly MSACs
+      - Automated Code Signing Services for ITSS Ch. 5
+      - Image Scanning Automation using Twistlock during build process
+      - Defined a repeatable procedure for BlueFringe Deployments
+
+  - position: Manager Network Development
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2019-04-01
+    endDate: 2022-03-01
+    summary: |
+      During my time as the Manager of a Network Development Team at Spectrum, I
+      worked together with a management team to transition a team of twenty
+      Network Engineers into Network Developers. This included guiding many into
+      unclear territory as their job functions were transitioned. Discovering a
+      clear career path and building a collaborative culture were some of the
+      small difficulties to overcome. Once our Service Reliability Engineering
+      team was estabilished, I guided them to continue development of scalable
+      Ansible Playbooks for Automated Deployments in our Production Environment;
+      Building automated regression tests using GitLab CI/CD and Jenkins; and
+      Containerizing legacy applications in Docker.
+    highlights:
+      - 'Established an environment with three vertical slice teams involving 
+        over twenty developers and three Area Product Owners'
+      - 'Guided my development team to automate a manual process which saved 
+        Spectrum a projected estimate of one million dollars in Capital Expense'
+      - 'Deployment automations using Ansible Roles allowing a scalable cookbook'
+
+  - position: Sr Network Developer
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2016-04-01
+    endDate: 2019-04-01
+    summary: |
+      At Spectrum Enterprise, our primary focus was to improve efficiencies of
+      our work-order pipeline by means of automating the provisioning of network
+      services. We participated in regular code reviews and followed the
+      principles outlined in gitflow. Our automated build pipeline(CI/CD) was
+      run through jobs executed by GitLab Runners and Jenkins Jobs. Daily
+      Stand-ups ensured communication and transparency among the Scrum Team. We
+      demonstrated our progress to Stakeholders and Product Owners at a per
+      Sprint Iteration. This would allow a project to fail-fast and be agile
+      enough to take new direction at the speed of business needs. As a
+      secondary hat, I developed scalable playbooks with Ansible roles to
+      systematically deploy our network orchestrator. This effort cut down
+      countless human hours during our production deployments and regression
+      testing.
+    highlights:
+      - 'Project Lead: Port Activation'
+      - 'Testing Lead: Andromeda Project'
+      - 'Development Lead: Systematic Deployments with Ansible'
+
+  - position: Sr Systems Engineer
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2014-07-01
+    endDate: 2016-04-01
+    summary: |
+      In a Systems Role, I developed modules for a Network Device Orchestration
+      Suite of tools, which automated common tasks in various software sets when
+      a new network element was discovered. Communicated to multiple groups when
+      changes were going to affect existing architecture. Developed multiple
+      scripts for operational groups based on requirements expressed.
+      Troubleshot issues as needed when network automation systems failed, or
+      were reported via trouble tickets.
+    highlights:
+      - 'Application Development: Coffee Reports'
+
+  - position: Network Engineer
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2012-04-01
+    endDate: 2014-07-01
+    summary: |
+      With Spectrum Enterprise's Network Engineering team I was free to improve
+      processes for departmental procedures within the Commercial Network. I
+      developed multiple scripts for identified inefficiencies within a team's
+      current workflow. I built reports based on various criteria and equipment
+      vendor challenges. I was able to push multi-line configuration changes to
+      1000's of various equipment based on security updates or network needs. I
+      was required to present data collected from network-wide collections so
+      that upper management can interpret and understand network trends and
+      peculiarities. As well, I provisioned circuits as requested by Business
+      Class customers across a cross-platform network comprised of; Cisco,
+      Juniper, Alcatel, Adva, and RAD equipment utilizing command line
+      interface.
+    highlights: []
+
+  - position: NOC Analysist
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2011-03-01
+    endDate: 2012-04-01
+    summary: |
+      While in Spectrum's NOC we maintained the network integrity of the
+      hybrid-fiber coax network used for CPE digital cable box reception and
+      high-speed Internet. Other monitored services included: Video-on-Demand
+      service group utilization, CMTS network elements, Regional Transport
+      Network, Customer Edge Network, and Spectrum network We collaborated TAC
+      and division dispatch teams to resolve issues found. Investigated network
+      problems using various tools including; Unified, NYROC, SPECTRUM, Tivoli
+      Integrated Portal, and other tool suites.
+    highlights: []
+
+  - position: Broadband Tech
+    company: Spectrum Enterprise
+    website: https://business.spectrum.com/
+    startDate: 2007-04-01
+    endDate: 2011-03-01
+    summary: |
+      When in the field, I troubleshot and repaired field problems from
+      subscribers' homes to bridge amplifiers. Responded to subscriber technical
+      service calls. Ensured a signal quality within Federal Communications
+      Commission standards and strength using various meters and tools. Replaced
+      sub-efficient drop cable, house cable, telephone, and Ethernet cable.
+      Conducted signal egress / ingress testing and repairs using signal seekers
+      and test meters to locate cracks in feeder system lines. Repaired cable
+      system leaks as regulated annually by the FCC.
+    highlights: []
+
+  - position: Information Systems Technician
+    company: US Navy
+    website: https://www.navy.com/careers/information-systems-technician/
+    startDate: 2003-02-01
+    endDate: 2007-02-01
+    summary: |
+      While in the Navy I Deployed local area networks, monitored traffic flow
+      on servers and preformed daily backups on servers. I installed and
+      operated various computer software on client machines, re-imaged when
+      needed. As well, we complied with US government requirements for secure
+      communications via HF, UHF, and VHF frequencies. Performed operational
+      tests and required adjustments on circuits. We maintained and replaced
+      various antennas.  And we proactively identified interference and jamming
+      frequencies to superiors.
+
+# Relevant Skills
+# ================================================
+# Skill level should be:
+# 1)Fundamental Awareness 2) Novice 3) Intermediate 4)Advanced 5)Expert
+skills:
+  - name: Security Compliance
+    level: Intermediate
+    keywords:
+      - MSAC
+      - Twistlock
+      - Mend / Whitesource
+      - Garantir GaraSign
+      - Skopeo
+  - name: Software Development
+    level: Advanced
+    keywords:
+      - Ansible
+      - Application Containerization
+      - CI/CD
+      - Docker Orchestration
+      - Gitflow
+      - Jenkins - GitLab - Travis CI
+      - RESTFUL HTTP APIs
+      - Test Driven Development
+  - name: Network Engineering
+    level: Advanced
+    keywords:
+      - IP Filtering / ACLs
+      - Network Protocols
+      - Routing Protocols
+      - Subnet Addressing
+  - name: Telecom
+    level: Intermediate
+    keywords:
+      - Cable Attenuation
+      - DOCSIS
+      - Hybrid Fiber Coax
+
+# Education
+# ================================================
+education:
+  - institution: United States Navy
+    area: Information Technology
+    studyType: Computer Sciences
+    startDate: 2003-02-01
+    endDate: 2007-02-01
+  - institution: Austin Community College
+    area: Cisco Network Academy
+    studyType: Network Engineering and Technology
+    startDate: 2010-02-01
+    endDate: 2011-06-01
+
+# Extras
+# ================================================
+# awards:
+# - title: Digital Compression Pioneer Award
+#   date: 2014-11-01
+#   awarder: Techcrunch
+#   summary: There is no spoon.
+references:
+  - name: Manny Patino
+    reference: |
+      Mark is fantastic to work with. He's constantly working on growing his
+      skillset and looking for ways to make work more efficient. His dedication to
+      his job and learning new skills on and off the job is inspirational and
+      admirable. I would highly recommend Mark for any engineering or leadership
+      position.
+
+  - name: Byron Moore
+    reference: |
+      It is my honor to recommend Mark Reyes for a leadership position here at
+      Charter Communications. Mark and I have known each other since 2015 and have
+      worked together directly since early 2018. I have greatly enjoyed out time
+      together and have come to esteem him as a technical authority, but more
+      importantly a mentor. Serving as team lead, he was responsible for
+      organizing the efforts of our team, cultivating new skills in myself and my
+      teammates, conducting internal and cross-group conferences and seeing
+      ambitious goals through to completion. I would be sad to see him go, but
+      understand fully that his many organizational and leadership skills would
+      serve the company far better from a position of management. Without a doubt,
+      I can recommend Mark for a position of more senior leadership. Please feel
+      free to contact me at byron.moore@charter.com if you wish to discuss Mark's
+      qualifications and experience further - I would be happy to expand on my
+      recommendation.
+
+  - name: Paul Lodronio
+    reference: |
+      I'm very appreciative for an opportunity to recommend Mark Reyes for a
+      Network-Automation/DevOps manager position.  Being assigned for the past
+      year to a group with Mark in a technical lead role, I’ve been more than
+      impressed with his expertise in network development, willingness to share
+      information, and his contributions towards a positive team environment.
+      My current job as a Network Developer is new and challenging.  Mark has been
+      tremendous in helping me to better understand software-defined networking
+      and how our team goes about deploying solutions onto our network
+      infrastructure.  My role within the group is to assist with the automation
+      efforts of our solution workflow and Mark was immense in guiding me through
+      this project.  His help included conducting code reviews, defining a source
+      control strategy of code deployment among various environments involving
+      Git, creating effective templates of Jenkins jobs that I could model to
+      automate deployment, and enabling Webex notifications on the status of these
+      jobs.
+      In working with Mark, what I noticed right away was his ability to teach
+      coupled with a desire to create and share accurate,
+      easy-to-read-and-understand documentation on our team's processes, projects,
+      and technology stack. He's always available whenever I have questions and
+      seems genuinely concerned about whether the things he shares with me make
+      sense.  From my experience, Mark is this way with everyone who approaches
+      him, regardless of their role or which part of the company they represent.
+      Supplementing his professional growth, Mark also makes time to research and
+      improve his engineering skills by utilizing his network lab at home.  He
+      often shares freely with interested colleagues about what he learns.
+      I think the best way to sum up my recommendation about Mark is for me to
+      answer the question of “Would I appreciate Mark as my manager?”.  Reflecting
+      on this question, I think back to a difficult but important production
+      deployment which happened earlier this year.  While no one asked Mark to be
+      accountable for the deployment, he was right beside a co-worker who stepped
+      up and took responsibility for the outcome.  They both stayed at the office
+      past midnight, verifying the deployment was successful.  He's supportive, he
+      cares, and he's willing to go the distance by your side to help get the job
+      done for the team.  My answer is a clear-cut “Yes”.
+
+  - name: Jerry Sessom
+    reference: |
+      I have had the privilege of working with Mr. Reyes since 2013, when I joined
+      Time Warner Cable in the Dallas office.
+      At the time, Mr. Reyes was a Network Engineer in Austin and I was assigned
+      to work in a “network tools development” group under the same management. We
+      collaborated together on several network tools and features. I relied on
+      Mark's ability to deftly straddle the world of Software Development and
+      Network Engineering, an absolute necessity for developing viable network
+      engineering tools.
+      In my experience, leadership requires an ability to identify and prioritize
+      effort in a way that will produce the best outcome for the company,
+      composure and direction under duress, and an ability to adjust communication
+      based on audience.  Mark conspicuously demonstrates these three traits, from
+      my vantage, in our ongoing professional relationship.
+      When our group required a software model for discovering network devices
+      that were not readily visible to our tools, Mark stepped-up to help our team
+      understand all aspects required to “discover” these thousands of devices so
+      they could be recorded in our OSS used to monitor alarms and manage
+      configuration, critical for end-customer experience. Mark not only lead us
+      in defining and prioritizing this effort, he was critical in the coding
+      effort.
+      On occasion, when tools issues would spill-over and impact many employees
+      across groups ( Operations, Management, Network Engineering ), Mark remained
+      calm and lead in identifying root causes and implementing solutions. A calm
+      demeanor in stressful times is a leadership quality I cannot overemphasize.
+      Mark has this skill.
+      Mark enjoys teaching others and he does it well. Anyone in the engineering
+      world knows this is not a strong suit among the engineer population. I have
+      witnessed Mark give presentations, sit-down with fellow employees and walk
+      through complex processes, report detailed status to upper management. He
+      adjusts his pace and lexicon to each situation for different personalities
+      and audience.
+      I unreservedly recommend Mark for a leadership role. He is an engineer's
+      engineer who will have respect and trust among whomever he manages.
+
+# ga_analytics: UA-116471927-2
