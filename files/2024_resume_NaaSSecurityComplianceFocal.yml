@@ -39,11 +39,8 @@ work:
     endDate: 2024-04-12
     summary: >
       As a Site Reliability Engineer within CIO's Network as a Service team, my primary responsibility revolves around automating manual tasks that reduce human time required for complex procedures or deployments.
-
       In my role as the team's Security Focal, I am dedicated to automating Security Compliance requirements outlined by ITSS using the CISO/BISO guidelines for Infrastructure Security Requirements. Over the past five quarters, I have served as the trusted Technical Owner Delegate for our team's Quarterly Security Assessments (formerly MSAC), consistently achieving successful outcomes with minimal findings requiring attention.
-
       For Application Security I designed a Jenkins Pipelines that followed the Code Signing Service using Skopeo to publish to Garantir GaraSign. Enhancements for automated vulnerability scanning using Twistlock which published results to our Artifactory Repo was also used to keep our team in compliance with ITSS Ch. 5.
-
       As a Subject Matter Expert in promoting new feature sets for BlueFringe production, I've led over 20 deployments within a Sprint-based release framework. By optimizing our procedures, I've transformed the deployment process from a multi-day endeavor into a streamlined, repeatable procedure completed in just a few hours.
     highlights:
       - Technical Owner Delegate for Quarterly MSACs

@@ -1,7 +1,10 @@
 {
   "dependencies": {
+    "jsonresume-theme-crisp": "^0.2.12",
     "jsonresume-theme-eddywashere": "^1.0.1",
     "jsonresume-theme-even": "^0.13.0",
+    "jsonresume-theme-modern": "^0.0.18",
+    "resume-cli": "^3.0.8",
     "yaml-to-json": "^0.3.0"
   }
 }
