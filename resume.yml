@@ -11,7 +11,7 @@ basics:
   summary: |
     As a proud Naval Veteran, I transitioned from four years of dedicated
     service in the Navy as an IT to embark on a successful 14-year journey with
-    a major ISP in Austin. 
+    a major ISP in Austin.
 
     In my latest role as a Site Reliability Engineer within CIO's Network as a
     Service team, I have shifted my efforts to optimizing operational efficiency
@@ -38,7 +38,7 @@ basics:
 # ================================================
 work:
   - position: Site Reliability Engineer
-    company: IBM
+    name: IBM
     website: https://www.ibm.com/careers
     startDate: 2022-03-01
     endDate: 2024-04-12
@@ -46,20 +46,20 @@ work:
       As an SRE within CIO's Network as a Service team, my primary
       responsibility revolves around automating manual tasks that reduce human
       time required for complex procedures or deployments.
-      
+
       In my role as the team's Security Focal, I am dedicated to automating
       Security Compliance requirements outlined by ITSS using the CISO/BISO
       guidelines for Infrastructure Security Requirements. Over the past five
       quarters, I have served as the trusted Technical Owner Delegate for our
       team's Quarterly Security Assessments (formerly MSAC), consistently
       achieving successful outcomes with minimal findings requiring attention.
-      
+
       For Application Security I designed a Jenkins Pipelines that followed the
       Code Signing Service using Skopeo to publish to Garantir GaraSign.
       Enhancements for automated vulnerability scanning using Twistlock which
       published results to our Artifactory Repo was also used to keep our team
       in compliance with ITSS Ch. 5.
-      
+
       Implemented a Netbox-Driven Lifecycle for virtual machines, using webhooks
       to automatically generate Jira tickets upon changes in VM's state. This
       seamless workflow will extended into creating AccessHub tickets and
@@ -78,7 +78,7 @@ work:
       - Defined a repeatable procedure for BlueFringe Deployments
 
   - position: Manager Network Development
-    company: Spectrum Enterprise
+    name: Spectrum Enterprise
     website: https://business.spectrum.com/
     startDate: 2019-04-01
     endDate: 2022-03-01
@@ -96,14 +96,14 @@ work:
       tests using GitLab CI/CD and Jenkins; and Containerizing legacy
       applications in Docker.
     highlights:
-      - 'Established an environment with three vertical slice teams involving 
+      - 'Established an environment with three vertical slice teams involving
         over twenty developers and three Area Product Owners'
-      - 'Guided my development team to automate a manual process which saved 
+      - 'Guided my development team to automate a manual process which saved
         Spectrum a projected estimate of one million dollars in Capital Expense'
       - Deployment automations using Ansible Roles allowing a scalable cookbook
 
   - position: Sr Network Developer
-    company: Spectrum Enterprise
+    name: Spectrum Enterprise
     website: https://business.spectrum.com/
     startDate: 2014-07-01
     endDate: 2019-04-01
@@ -129,7 +129,7 @@ work:
       - 'Application Development: Coffee Reports'
 
   - position: Network Engineer
-    company: Spectrum Enterprise
+    name: Spectrum Enterprise
     website: https://business.spectrum.com/
     startDate: 2012-04-01
     endDate: 2014-07-01
@@ -141,7 +141,7 @@ work:
     highlights: []
 
   - position: NOC Analysist
-    company: Spectrum Enterprise
+    name: Spectrum Enterprise
     website: https://business.spectrum.com/
     startDate: 2011-03-01
     endDate: 2012-04-01
@@ -150,7 +150,7 @@ work:
     highlights: []
 
   - position: Broadband Tech
-    company: Spectrum Enterprise
+    name: Spectrum Enterprise
     website: https://business.spectrum.com/
     startDate: 2007-04-01
     endDate: 2011-03-01
@@ -159,7 +159,7 @@ work:
     highlights: []
 
   - position: Information Systems Technician
-    company: US Navy
+    name: US Navy
     website: https://www.navy.com/careers/information-systems-technician/
     startDate: 2003-02-01
     endDate: 2007-02-01
