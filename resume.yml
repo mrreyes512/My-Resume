@@ -1,11 +1,14 @@
 ---
+meta:
+  theme: "elegant"
+
 # Basic Resume Info
 # ================================================
 basics:
   name: Mark Reyes
   label: Site Reliability Engineer
   picture: https://raw.githubusercontent.com/mrreyes512/resume/master/my_profile.png
-  image: https://raw.githubusercontent.com/mrreyes512/resume/master/my_profile.png
+  image: https://avatars.githubusercontent.com/u/6344935?v=4?s=460&u=38f220a2c9c658141804f881c334c594eb1642ac&v=4
   email: Mark.Reyes@ibm.com
   phone: (512) 790-0901
   # website: https://registry.jsonresume.org/mark_reyes
