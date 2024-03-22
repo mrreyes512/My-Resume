@@ -11,7 +11,7 @@ basics:
   image: https://avatars.githubusercontent.com/u/6344935?v=4?s=460&u=38f220a2c9c658141804f881c334c594eb1642ac&v=4
   email: Mark.Reyes@ibm.com
   phone: (512) 790-0901
-  # website: https://registry.jsonresume.org/mark_reyes
+  website: https://registry.jsonresume.org/mrreyes512
   summary: |
     As a proud Naval Veteran, I transitioned from four years of dedicated
     service in the Navy as an IT to embark on a successful 14-year journey with
@@ -34,9 +34,9 @@ basics:
     - network: GitHub
       username: mrreyes512
       url: https://github.com/mrreyes512/
-  #   - network: JSON Resume
-  #     username: mark_reyes
-  #     url: https://registry.jsonresume.org/mark_reyes
+    # - network: JSON Resume
+    #   username: mark_reyes
+    #   url: https://registry.jsonresume.org/mrreyes512
 
 # Work Experience
 # ================================================
@@ -52,32 +52,28 @@ work:
       time required for complex procedures or deployments.
 
       In my role as the team's Security Focal, I am dedicated to automating
-      Security Compliance requirements outlined by ITSS using the CISO/BISO
-      guidelines for Infrastructure Security Requirements. Over the past five
+      Security Compliance requirements outlined by ITSS. Over the past five
       quarters, I have served as the trusted Technical Owner Delegate for our
-      team's Quarterly Security Assessments (formerly MSAC), consistently
-      achieving successful outcomes with minimal findings requiring attention.
+      team's Quarterly Security Assessments, consistently achieving successful
+      outcomes with minimal findings requiring attention.
 
-      For Application Security I designed a Jenkins Pipelines that followed the
-      Code Signing Service using Skopeo to publish to Garantir GaraSign.
-      Enhancements for automated vulnerability scanning using Twistlock which
-      published results to our Artifactory Repo was also used to keep our team
-      in compliance with ITSS Ch. 5.
+      I ensured Application Secuity by automating a pipeline in Jenkins for our
+      Code Signing Services during the build process. Automated vulnerability
+      scanning was achieved using Twistlock and published results to our
+      Artifactory Repository.
 
       Implemented a Netbox-Driven Lifecycle for virtual machines, using webhooks
       to automatically generate Jira tickets upon changes in VM's state. This
-      seamless workflow will extended into creating AccessHub tickets and
-      updating VM's description in vCenter. This workflow is designed to
-      systematically track and document a repeatable lifecycle process.
+      seamless workflow will extended into updating VM's description in vCenter.
 
-      As a Subject Matter Expert in promoting new feature sets for BlueFringe
-      production, I've led over 20 deployments within a Sprint-based release
-      framework. By optimizing our procedures, I've transformed the deployment
-      process from a multi-day endeavor into a streamlined, repeatable procedure
-      completed in just a few hours.
+      As a Subject Matter Expert in promoting new feature sets, I've led over 20
+      deployments within a Sprint-based release framework. By optimizing our
+      procedures, I've transformed the deployment process from a multi-day
+      endeavor into a streamlined, repeatable procedure completed in just a few
+      hours.
     highlights:
-      - Technical Owner Delegate for Quarterly MSACs
-      - Automated Code Signing Services for ITSS Ch. 5
+      - Technical Owner Delegate for Security Assessments
+      - Automated Code Signing Services
       - Image Scanning Automation using Twistlock during build process
       - Defined a repeatable procedure for BlueFringe Deployments
 
@@ -168,7 +164,9 @@ work:
     startDate: 2003-02-01
     endDate: 2007-02-01
     summary: |
-      My time in the Navy was a brief 4 years and arose through the ranks of E1 - E4.
+      My time in the Navy was a brief 4 years and arose through the ranks of E1
+      - E5. I also rose to the challenge of obtaining my Enlisted Surface
+      Warfare Specialist pin while still an E3.
 
 # Relevant Skills
 # ================================================
@@ -178,7 +176,8 @@ skills:
   - name: Security Compliance
     level: Intermediate
     keywords:
-      - MSAC
+      - Security Compliance
+      - Nessus
       - Twistlock
       - Mend / Whitesource
       - Garantir GaraSign
