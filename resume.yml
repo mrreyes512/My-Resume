@@ -47,15 +47,22 @@ work:
     startDate: 2022-03-01
     endDate: 2024-04-12
     summary: |
-      As an SRE within CIO's Network as a Service team, my primary
-      responsibility revolves around automating manual tasks that reduce human
-      time required for complex procedures or deployments.
+      As an SRE within IBM, my primary responsibility revolves around automating
+      manual tasks that reduce human time required for complex procedures or
+      deployments.
+
+      As a Subject Matter Expert in promoting new feature sets, I've led over 20
+      deployments within a Sprint-based release framework. By optimizing our
+      procedures, I've transformed the deployment process from a multi-day
+      endeavor into a streamlined, repeatable procedure completed in just a few
+      hours.
 
       In my role as the team's Security Focal, I am dedicated to automating
-      Security Compliance requirements outlined by ITSS. Over the past five
-      quarters, I have served as the trusted Technical Owner Delegate for our
-      team's Quarterly Security Assessments, consistently achieving successful
-      outcomes with minimal findings requiring attention.
+      Security Compliance requirements outlined by ITSS across our VM
+      infrastructure. Over the past five quarters, I have served as the trusted
+      Technical Owner Delegate for our team's Quarterly Security Assessments,
+      consistently achieving successful outcomes with minimal findings requiring
+      attention.
 
       I ensured Application Secuity by automating a pipeline in Jenkins for our
       Code Signing Services during the build process. Automated vulnerability
@@ -66,11 +73,6 @@ work:
       to automatically generate Jira tickets upon changes in VM's state. This
       seamless workflow will extended into updating VM's description in vCenter.
 
-      As a Subject Matter Expert in promoting new feature sets, I've led over 20
-      deployments within a Sprint-based release framework. By optimizing our
-      procedures, I've transformed the deployment process from a multi-day
-      endeavor into a streamlined, repeatable procedure completed in just a few
-      hours.
     highlights:
       - Technical Owner Delegate for Security Assessments
       - Automated Code Signing Services
