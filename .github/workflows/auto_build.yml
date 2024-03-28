@@ -159,6 +159,7 @@ jobs:
     name: Publish to Public GIST 🏗
     needs: [Build-Resume-JSON]
     runs-on: ubuntu-20.04
+    environment: github-pages
     steps:
 
       - name: Download the resume artifact
