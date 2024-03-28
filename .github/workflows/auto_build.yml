@@ -155,6 +155,24 @@ jobs:
           name: resume.pdf
           path: ${{ github.workspace }}/resume.pdf
 
+  Deploy-To-Public-GIST:
+    name: Updating Index.html 🏗
+    needs: [Build-Resume-JSON]
+    runs-on: ubuntu-20.04
+    steps:
+
+      - name: Download the resume artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume.json
+
+      - name: Deploy
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.TOKEN }}
+          gist_id: 91db4ee7d322c69ed3131fd586ae03b2
+          file_path: resume.json
+          file_type: json
 
   # TODO: The below step is no longer needed. Need to consider updating the
   # resume GIST:
