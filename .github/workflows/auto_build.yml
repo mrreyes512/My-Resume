@@ -156,7 +156,7 @@ jobs:
           path: ${{ github.workspace }}/resume.pdf
 
   Deploy-To-Public-GIST:
-    name: Updating Index.html 🏗
+    name: Publish to Public GIST 🏗
     needs: [Build-Resume-JSON]
     runs-on: ubuntu-20.04
     steps:
