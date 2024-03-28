@@ -169,8 +169,7 @@ jobs:
       - name: Deploy
         uses: exuanbo/actions-deploy-gist@v1
         with:
-          # token: ${{ secrets.TOKEN }}
-          token: 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
+          token: ${{ secrets.TOKEN }}
           gist_id: 91db4ee7d322c69ed3131fd586ae03b2
           file_path: resume.json
           file_type: json
