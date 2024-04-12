@@ -34,3 +34,8 @@ This is where Github will use it's CI/CD ('Github workflows') and automate my re
 1) Obtain a know good Linux environment     
 2) Install `resume-cli` outlined in the [Getting Started](https://jsonresume.org/getting-started/) section      
 3) Convert `resume.yml` to `resume.json` using 
+
+## Picture
+- To get my picture: 
+- https://api.github.com/users/mrreyes512
+- look for avatar_url
