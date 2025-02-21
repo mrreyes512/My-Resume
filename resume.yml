@@ -47,11 +47,21 @@ work:
     startDate: 2024-04-01
     endDate: 2025-03-01
     summary: |
-      I did things and stuff.
+      In my first year as a contractor at Cigna, I was entrusted with key 
+      challenges within GNS. I enhanced communication within GNS's Automation 
+      Community and identified ways for NDO to provide value through guidance 
+      and collaboration. I led the GNS Automation Community, conducted 52 
+      bi-weekly meetings, and established regular 1:1s with Team Leaders. I 
+      successfully migrated the team to the Ansible Automation Platform (AAP) 
+      and produced 19 training documents. I also presented key initiatives to 
+      leadership, including the NDO Script-Library, Introduction to AAP, and 
+      AAP Progress Update.
     highlights:
-      - 'I did a thing'
-      - 'I did another thing'
-
+      - Conducted 52 bi-weekly meetings for GNS Automation Community
+      - Migrated team to Ansible Automation Platform (AAP)
+      - Produced 19 training documents for GNS Guides Training Repository
+      - Presented NDO Script-Library, Introduction to AAP, and AAP Progress 
+        Update to leadership
 
   - position: Site Reliability Engineer(Security Focal)
     name: IBM
@@ -60,29 +70,29 @@ work:
     endDate: 2024-04-12
     summary: |
       As an SRE within IBM, my primary responsibility revolves around automating
-      manual tasks that reduce human time required for complex procedures or
+      manual tasks that reduce human time required for complex procedures or 
       deployments.
 
       As a Subject Matter Expert in promoting new feature sets, I've led over 20
-      deployments within a Sprint-based release framework. By optimizing our
-      procedures, I've transformed the deployment process from a multi-day
-      endeavor into a streamlined, repeatable procedure completed in just a few
+      deployments within a Sprint-based release framework. By optimizing our 
+      procedures, I've transformed the deployment process from a multi-day 
+      endeavor into a streamlined, repeatable procedure completed in just a few 
       hours.
 
-      In my role as the team's Security Focal, I am dedicated to automating
-      Security Compliance requirements outlined by ITSS across our VM
-      infrastructure. Over the past five quarters, I have served as the trusted
-      Technical Owner Delegate for our team's Quarterly Security Assessments,
-      consistently achieving successful outcomes with minimal findings requiring
-      attention.
+      In my role as the team's Security Focal, I am dedicated to automating 
+      Security Compliance requirements outlined by ITSS across our VM 
+      infrastructure. Over the past five quarters, I have served as the trusted 
+      Technical Owner Delegate for our team's Quarterly Security Assessments, 
+      consistently achieving successful outcomes with minimal findings 
+      requiring attention.
 
-      I ensured Application Secuity by automating a pipeline in Jenkins for our
-      Code Signing Services during the build process. Automated vulnerability
-      scanning was achieved using Twistlock and published results to our
+      I ensured Application Secuity by automating a pipeline in Jenkins for our 
+      Code Signing Services during the build process. Automated vulnerability 
+      scanning was achieved using Twistlock and published results to our 
       Artifactory Repository.
 
       Implemented a Netbox-Driven Lifecycle for virtual machines, using webhooks
-      to automatically generate Jira tickets upon changes in VM's state. This
+      to automatically generate Jira tickets upon changes in VM's state. This 
       seamless workflow will extended into updating VM's description in vCenter.
 
     highlights:
@@ -98,22 +108,22 @@ work:
     endDate: 2022-03-01
     summary: |
       During my time as the Manager of a Network Development Team at Spectrum, I
-      worked together with a management team to transition a team of twenty
+      worked together with a management team to transition a team of twenty 
       Network Engineers into Network Developers. This included guiding many into
-      unclear territory as their job functions were transitioned. Discovering a
-      clear career path and building a collaborative culture were some of the
+      unclear territory as their job functions were transitioned. Discovering a 
+      clear career path and building a collaborative culture were some of the 
       small difficulties to overcome.
 
-      Once our Service Reliability Engineering team was estabilished, I guided
-      them to continue development of scalable Ansible Playbooks for Automated
-      Deployments in our Production Environment; Building automated regression
-      tests using GitLab CI/CD and Jenkins; and Containerizing legacy
+      Once our Service Reliability Engineering team was estabilished, I guided 
+      them to continue development of scalable Ansible Playbooks for Automated 
+      Deployments in our Production Environment; Building automated regression 
+      tests using GitLab CI/CD and Jenkins; and Containerizing legacy 
       applications in Docker.
     highlights:
-      - 'Established an environment with three vertical slice teams involving
-        over twenty developers and three Area Product Owners'
-      - 'Guided my development team to automate a manual process which saved
-        Spectrum a projected estimate of one million dollars in Capital Expense'
+      - "Established an environment with three vertical slice teams involving 
+        over twenty developers and three Area Product Owners"
+      - "Guided my development team to automate a manual process which saved 
+        Spectrum a projected estimate of one million dollars in Capital Expense"
       - Deployment automations using Ansible Roles allowing a scalable cookbook
 
   - position: Sr Network Developer
@@ -122,25 +132,25 @@ work:
     startDate: 2014-07-01
     endDate: 2019-04-01
     summary: |
-      At Spectrum Enterprise, our primary focus was to improve efficiencies of
+      At Spectrum Enterprise, our primary focus was to improve efficiencies of 
       our work-order pipeline by means of automating the provisioning of network
-      services. We participated in regular code reviews and followed the
-      principles outlined in gitflow. Our automated build pipeline(CI/CD) was
-      run through jobs executed by GitLab Runners and Jenkins Jobs. Daily
-      Stand-ups ensured communication and transparency among the Scrum Team. We
-      demonstrated our progress to Stakeholders and Product Owners at a per
-      Sprint Iteration. This would allow a project to fail-fast and be agile
+      services. We participated in regular code reviews and followed the 
+      principles outlined in gitflow. Our automated build pipeline(CI/CD) was 
+      run through jobs executed by GitLab Runners and Jenkins Jobs. Daily 
+      Stand-ups ensured communication and transparency among the Scrum Team. We 
+      demonstrated our progress to Stakeholders and Product Owners at a per 
+      Sprint Iteration. This would allow a project to fail-fast and be agile 
       enough to take new direction at the speed of business needs.
 
-      As a secondary hat, I developed scalable playbooks with Ansible roles to
-      systematically deploy our network orchestrator. This effort cut down
-      countless human hours during our production deployments and regression
+      As a secondary hat, I developed scalable playbooks with Ansible roles to 
+      systematically deploy our network orchestrator. This effort cut down 
+      countless human hours during our production deployments and regression 
       testing.
     highlights:
-      - 'Project Lead: Port Activation'
-      - 'Testing Lead: Andromeda Project'
-      - 'Development Lead: Systematic Deployments with Ansible'
-      - 'Application Development: Coffee Reports'
+      - "Project Lead: Port Activation"
+      - "Testing Lead: Andromeda Project"
+      - "Development Lead: Systematic Deployments with Ansible"
+      - "Application Development: Coffee Reports"
 
   - position: Network Engineer
     name: Spectrum Enterprise
@@ -148,7 +158,7 @@ work:
     startDate: 2012-04-01
     endDate: 2014-07-01
     summary: |
-      With Spectrum Enterprise's Network Engineering team I was able to obtain
+      With Spectrum Enterprise's Network Engineering team I was able to obtain 
       multiple Networking and Security Certifications from multiple platforms. I
       was able to obtain a CCNP in Routing and Switching, CCNA Security, Juniper
       JNCIA, and Alatel NRS-1.
@@ -178,8 +188,8 @@ work:
     startDate: 2003-02-01
     endDate: 2007-02-01
     summary: |
-      My time in the Navy was a brief 4 years and arose through the ranks of
-      E1-E5. I also rose to the challenge of obtaining my Enlisted Surface
+      My time in the Navy was a brief 4 years and arose through the ranks of 
+      E1-E5. I also rose to the challenge of obtaining my Enlisted Surface 
       Warfare Specialist(ESWS) pin while still an E3.
 
 # Relevant Skills
