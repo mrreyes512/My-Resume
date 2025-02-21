@@ -41,6 +41,18 @@ basics:
 # Work Experience
 # ================================================
 work:
+  - position: Sr Network Guy...
+    name: Cigna
+    website: https://www.cigna.com/
+    startDate: 2024-04-01
+    endDate: 2025-03-01
+    summary: |
+      I did things and stuff.
+    highlights:
+      - 'I did a thing'
+      - 'I did another thing'
+
+
   - position: Site Reliability Engineer(Security Focal)
     name: IBM
     website: https://www.ibm.com/careers
