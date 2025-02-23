@@ -4,7 +4,7 @@ install:
 	pip install pipenv
 update-gist:
 	curl -X PATCH -H "Authorization: token $(GITHUB_TOKEN)" \
-	-d '{"files": {"resume.json": {"content": "'"$(cat resume.json)"'"}}}' \
+	-d '{"files": {"resume.json": {"content": "'"$(cat resume.json | base64)"'"}}}' \
 	https://api.github.com/gists/91db4ee7d322c69ed3131fd586ae03b2
 serve: 
 	resume serve

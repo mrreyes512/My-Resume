@@ -17,7 +17,7 @@ basics:
 
     Recently, at IBM and Cigna, I've specialized in automation-driven infrastructure, security compliance, and process optimization. I've led network automation communities, migrated teams to Ansible Automation Platform (AAP), and developed training repositories to scale knowledge sharing. My expertise in automation, security, and DevOps methodologies ensures streamlined deployments and resilient infrastructure.
 
-    At the core of my work is a passion for discovering the unknown potential in others—mentoring engineers, fostering collaboration, and building teams that can achieve the extraordinary. I thrive in leadership roles that drive innovation, ensuring that through teamwork and automation, we create scalable, secure, and efficient solutions that empower organizations to operate at their full potential.
+    At the core of my work is a passion for discovering the unknown potential in others, mentoring engineers, fostering collaboration, and building teams that can achieve the extraordinary. I thrive in leadership roles that drive innovation, ensuring that through teamwork and automation, we create scalable, secure, and efficient solutions that empower organizations to operate at their full potential.
   location:
     postalCode: TX 78665
     city: Round Rock
@@ -43,18 +43,15 @@ work:
     startDate: 2024-04-01
     endDate: 2025-03-01
     summary: |
-      As a contractor at Cigna, I played a pivotal role in strengthening GNS's Automation Community by leading cross-team collaboration, improving automation processes, and driving the adoption of the Ansible Automation Platform (AAP). I spearheaded 52 bi-weekly meetings, fostering a culture of communication and technical knowledge sharing. To further support team development, I conducted 38 technical 1:1 sessions, mentoring engineers and guiding them through automation best practices.
+      In my time at Cigna, I play a pivotal role in strengthening an Automation Community within my org by leading cross-team collaboration, improving automation processes, and driving the adoption of the Ansible Automation Platform (AAP). In 2024, I conducted 52 bi-weekly meetings, fostering a culture of communication and technical knowledge sharing. To further support teams development, I conducted 38 technical 1:1 sessions, mentoring engineers and guiding them through automation best practices.
 
-      One of my key initiatives was the creation of the GNS Script Library, which was later integrated into the Automation Community Catalog. This effort standardized automation scripts and provided a central repository for reusable automation components. Additionally, I developed and maintained a GitHub-based training repository, publishing 19 technical documents that covered essential automation topics such as variable encryption, collection distribution, and dynamic inventory integration with Nautobot.
+      A key challenge was aligning all Network Engineering teams on a common scripting languange-Ansible. With varying automation experience and tool preferences, gaining consensus required technical discussions, hands-on training, and leadership buy-in. Through this effort, teams can now develop and maintain their own production-ready automations, reducing reliance on external groups. This standardization has shortened the time from idea to operational automation, ensuring greater efficiency and scalability across the organization.
 
-      I also led the transition from Itential to Ansible Automation Platform (AAP), improving engagement and adoption by leveraging a Slido survey with 73 participants to gather team feedback and drive consensus. My contributions extended beyond technical execution, as I also presented key automation initiatives to leadership, including the NDO Script-Library (May 2024), Introduction to AAP (June 2024), and AAP Progress Update (October 2024), ensuring visibility and alignment with organizational goals.
     highlights:
-      - Led 52 bi-weekly meetings to enhance collaboration within GNS's Automation Community.
-      - Successfully migrated the automation framework to AAP, improving adoption and engagement.
-      - Developed and published 19 training documents on automation best practices.
-      - Created a GitHub-based training repository, streamlining onboarding and knowledge sharing.
+      - Migrated the automation framework to AAP, improving adoption and engagement.
+      - Published 19 training documents on automation best practices.
       - Conducted 38 technical 1:1 sessions to mentor engineers and support skill development.
-      - Delivered leadership presentations on NDO Script-Library, Introduction to AAP, and AAP Progress Update.
+      - Presented four high-level architectural overviews to Senior Leadership, driving strategic alignment and informed decision-making.
 
   - position: Site Reliability Engineer(Security Focal)
     name: IBM
