@@ -6,22 +6,18 @@ meta:
 # ================================================
 basics:
   name: Mark Reyes
-  label: Site Reliability Engineer
+  label: Senior Network Automation Engineer
   picture: https://raw.githubusercontent.com/mrreyes512/resume/master/my_profile.png
   image: https://avatars.githubusercontent.com/u/6344935?v=4?s=460&u=38f220a2c9c658141804f881c334c594eb1642ac&v=4
   email: MrReyes512@gmail.com
   phone: (512) 790-0901
   website: https://registry.jsonresume.org/mrreyes512
   summary: |
-    As a proud Naval Veteran, I transitioned from four years of dedicated
-    service in the Navy as an IT to embark on a successful 14-year journey with
-    a major ISP in Austin.
+    As a Naval Veteran turned Automation and Reliability Engineer, I bring 15+ years of experience in network automation, site reliability, and IT operations. My career began in the U.S. Navy as an IT specialist, followed by a successful transition into telecom and enterprise networking, where I've led large-scale automation initiatives and cross-team collaborations.
 
-    In my latest role as a Site Reliability Engineer within IBM, I have shifted
-    my efforts to optimizing operational efficiency through automation. With a
-    specialized focus on our team's Security Compliance and alignment with CISO
-    guidelines, I am dedicated to driving excellence and ensuring seamless
-    operations within the organization.
+    Recently, at IBM and Cigna, I've specialized in automation-driven infrastructure, security compliance, and process optimization. I've led network automation communities, migrated teams to Ansible Automation Platform (AAP), and developed training repositories to scale knowledge sharing. My expertise in automation, security, and DevOps methodologies ensures streamlined deployments and resilient infrastructure.
+
+    At the core of my work is a passion for discovering the unknown potential in others, mentoring engineers, fostering collaboration, and building teams that can achieve the extraordinary. I thrive in leadership roles that drive innovation, ensuring that through teamwork and automation, we create scalable, secure, and efficient solutions that empower organizations to operate at their full potential.
   location:
     postalCode: TX 78665
     city: Round Rock
@@ -41,6 +37,22 @@ basics:
 # Work Experience
 # ================================================
 work:
+  - position: Senior Network Automation Engineer
+    name: Cigna
+    website: https://www.cigna.com/
+    startDate: 2024-04-01
+    endDate: 2025-03-01
+    summary: |
+      In my time at Cigna, I play a pivotal role in strengthening an Automation Community within my org by leading cross-team collaboration, improving automation processes, and driving the adoption of the Ansible Automation Platform (AAP). In 2024, I conducted 52 bi-weekly meetings, fostering a culture of communication and technical knowledge sharing. To further support teams development, I conducted 38 technical 1:1 sessions, mentoring engineers and guiding them through automation best practices.
+
+      A key challenge was aligning all Network Engineering teams on a common scripting languange-Ansible. With varying automation experience and tool preferences, gaining consensus required technical discussions, hands-on training, and leadership buy-in. Through this effort, teams can now develop and maintain their own production-ready automations, reducing reliance on external groups. This standardization has shortened the time from idea to operational automation, ensuring greater efficiency and scalability across the organization.
+
+    highlights:
+      - Migrated the automation framework to AAP, improving adoption and engagement.
+      - Published 19 training documents on automation best practices.
+      - Conducted 38 technical 1:1 sessions to mentor engineers and support skill development.
+      - Presented four high-level architectural overviews to Senior Leadership, driving strategic alignment and informed decision-making.
+
   - position: Site Reliability Engineer(Security Focal)
     name: IBM
     website: https://www.ibm.com/careers
@@ -48,29 +60,29 @@ work:
     endDate: 2024-04-12
     summary: |
       As an SRE within IBM, my primary responsibility revolves around automating
-      manual tasks that reduce human time required for complex procedures or
+      manual tasks that reduce human time required for complex procedures or 
       deployments.
 
       As a Subject Matter Expert in promoting new feature sets, I've led over 20
-      deployments within a Sprint-based release framework. By optimizing our
-      procedures, I've transformed the deployment process from a multi-day
-      endeavor into a streamlined, repeatable procedure completed in just a few
+      deployments within a Sprint-based release framework. By optimizing our 
+      procedures, I've transformed the deployment process from a multi-day 
+      endeavor into a streamlined, repeatable procedure completed in just a few 
       hours.
 
-      In my role as the team's Security Focal, I am dedicated to automating
-      Security Compliance requirements outlined by ITSS across our VM
-      infrastructure. Over the past five quarters, I have served as the trusted
-      Technical Owner Delegate for our team's Quarterly Security Assessments,
-      consistently achieving successful outcomes with minimal findings requiring
-      attention.
+      In my role as the team's Security Focal, I am dedicated to automating 
+      Security Compliance requirements outlined by ITSS across our VM 
+      infrastructure. Over the past five quarters, I have served as the trusted 
+      Technical Owner Delegate for our team's Quarterly Security Assessments, 
+      consistently achieving successful outcomes with minimal findings 
+      requiring attention.
 
-      I ensured Application Secuity by automating a pipeline in Jenkins for our
-      Code Signing Services during the build process. Automated vulnerability
-      scanning was achieved using Twistlock and published results to our
+      I ensured Application Secuity by automating a pipeline in Jenkins for our 
+      Code Signing Services during the build process. Automated vulnerability 
+      scanning was achieved using Twistlock and published results to our 
       Artifactory Repository.
 
       Implemented a Netbox-Driven Lifecycle for virtual machines, using webhooks
-      to automatically generate Jira tickets upon changes in VM's state. This
+      to automatically generate Jira tickets upon changes in VM's state. This 
       seamless workflow will extended into updating VM's description in vCenter.
 
     highlights:
@@ -86,22 +98,22 @@ work:
     endDate: 2022-03-01
     summary: |
       During my time as the Manager of a Network Development Team at Spectrum, I
-      worked together with a management team to transition a team of twenty
+      worked together with a management team to transition a team of twenty 
       Network Engineers into Network Developers. This included guiding many into
-      unclear territory as their job functions were transitioned. Discovering a
-      clear career path and building a collaborative culture were some of the
+      unclear territory as their job functions were transitioned. Discovering a 
+      clear career path and building a collaborative culture were some of the 
       small difficulties to overcome.
 
-      Once our Service Reliability Engineering team was estabilished, I guided
-      them to continue development of scalable Ansible Playbooks for Automated
-      Deployments in our Production Environment; Building automated regression
-      tests using GitLab CI/CD and Jenkins; and Containerizing legacy
+      Once our Service Reliability Engineering team was estabilished, I guided 
+      them to continue development of scalable Ansible Playbooks for Automated 
+      Deployments in our Production Environment; Building automated regression 
+      tests using GitLab CI/CD and Jenkins; and Containerizing legacy 
       applications in Docker.
     highlights:
-      - 'Established an environment with three vertical slice teams involving
-        over twenty developers and three Area Product Owners'
-      - 'Guided my development team to automate a manual process which saved
-        Spectrum a projected estimate of one million dollars in Capital Expense'
+      - "Established an environment with three vertical slice teams involving 
+        over twenty developers and three Area Product Owners"
+      - "Guided my development team to automate a manual process which saved 
+        Spectrum a projected estimate of one million dollars in Capital Expense"
       - Deployment automations using Ansible Roles allowing a scalable cookbook
 
   - position: Sr Network Developer
@@ -110,25 +122,25 @@ work:
     startDate: 2014-07-01
     endDate: 2019-04-01
     summary: |
-      At Spectrum Enterprise, our primary focus was to improve efficiencies of
+      At Spectrum Enterprise, our primary focus was to improve efficiencies of 
       our work-order pipeline by means of automating the provisioning of network
-      services. We participated in regular code reviews and followed the
-      principles outlined in gitflow. Our automated build pipeline(CI/CD) was
-      run through jobs executed by GitLab Runners and Jenkins Jobs. Daily
-      Stand-ups ensured communication and transparency among the Scrum Team. We
-      demonstrated our progress to Stakeholders and Product Owners at a per
-      Sprint Iteration. This would allow a project to fail-fast and be agile
+      services. We participated in regular code reviews and followed the 
+      principles outlined in gitflow. Our automated build pipeline(CI/CD) was 
+      run through jobs executed by GitLab Runners and Jenkins Jobs. Daily 
+      Stand-ups ensured communication and transparency among the Scrum Team. We 
+      demonstrated our progress to Stakeholders and Product Owners at a per 
+      Sprint Iteration. This would allow a project to fail-fast and be agile 
       enough to take new direction at the speed of business needs.
 
-      As a secondary hat, I developed scalable playbooks with Ansible roles to
-      systematically deploy our network orchestrator. This effort cut down
-      countless human hours during our production deployments and regression
+      As a secondary hat, I developed scalable playbooks with Ansible roles to 
+      systematically deploy our network orchestrator. This effort cut down 
+      countless human hours during our production deployments and regression 
       testing.
     highlights:
-      - 'Project Lead: Port Activation'
-      - 'Testing Lead: Andromeda Project'
-      - 'Development Lead: Systematic Deployments with Ansible'
-      - 'Application Development: Coffee Reports'
+      - "Project Lead: Port Activation"
+      - "Testing Lead: Andromeda Project"
+      - "Development Lead: Systematic Deployments with Ansible"
+      - "Application Development: Coffee Reports"
 
   - position: Network Engineer
     name: Spectrum Enterprise
@@ -136,7 +148,7 @@ work:
     startDate: 2012-04-01
     endDate: 2014-07-01
     summary: |
-      With Spectrum Enterprise's Network Engineering team I was able to obtain
+      With Spectrum Enterprise's Network Engineering team I was able to obtain 
       multiple Networking and Security Certifications from multiple platforms. I
       was able to obtain a CCNP in Routing and Switching, CCNA Security, Juniper
       JNCIA, and Alatel NRS-1.
@@ -166,8 +178,8 @@ work:
     startDate: 2003-02-01
     endDate: 2007-02-01
     summary: |
-      My time in the Navy was a brief 4 years and arose through the ranks of
-      E1-E5. I also rose to the challenge of obtaining my Enlisted Surface
+      My time in the Navy was a brief 4 years and arose through the ranks of 
+      E1-E5. I also rose to the challenge of obtaining my Enlisted Surface 
       Warfare Specialist(ESWS) pin while still an E3.
 
 # Relevant Skills
